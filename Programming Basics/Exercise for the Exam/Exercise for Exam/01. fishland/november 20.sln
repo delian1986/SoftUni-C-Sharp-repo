@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. fishland", "november 20\01. fishland.csproj", "{C0BCBACD-2E49-4BDD-994F-F5812C8822FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. pets", "02. pets\02. pets.csproj", "{00E021FD-BA79-4B8F-97A0-DE19AFE3EDCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0BCBACD-2E49-4BDD-994F-F5812C8822FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BCBACD-2E49-4BDD-994F-F5812C8822FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BCBACD-2E49-4BDD-994F-F5812C8822FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BCBACD-2E49-4BDD-994F-F5812C8822FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E021FD-BA79-4B8F-97A0-DE19AFE3EDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E021FD-BA79-4B8F-97A0-DE19AFE3EDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E021FD-BA79-4B8F-97A0-DE19AFE3EDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E021FD-BA79-4B8F-97A0-DE19AFE3EDCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
