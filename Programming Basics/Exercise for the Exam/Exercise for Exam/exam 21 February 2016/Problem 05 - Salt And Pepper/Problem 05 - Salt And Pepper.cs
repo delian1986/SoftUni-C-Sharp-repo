@@ -10,6 +10,7 @@ namespace Problem_05___Salt_And_Pepper
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
