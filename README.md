@@ -1,2 +1,2 @@
 # C-SoftUni-repo
-Keep camlm and do your homework
+Keep calm and do your homework
