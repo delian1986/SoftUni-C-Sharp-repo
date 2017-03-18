@@ -40,7 +40,7 @@ namespace _12.Generate_Rectangles
             }
             if (found==false)
             {
-                Console.WriteLine("no");
+                Console.WriteLine("No");
             }
         }
     }
