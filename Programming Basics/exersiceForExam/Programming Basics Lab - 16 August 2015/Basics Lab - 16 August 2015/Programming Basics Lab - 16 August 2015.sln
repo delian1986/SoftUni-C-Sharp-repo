@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Bai Ivan Adventures", "01. Bai Ivan Adventures\01. Bai Ivan Adventures.csproj", "{F1D813D3-00E2-46D4-A192-9CED46EC5F36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Drunk Ani", "02. Drunk Ani\02. Drunk Ani.csproj", "{C75A19C0-C7F0-409B-9F3D-C57997B9318A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Christmas Tree", "03. Christmas Tree\03. Christmas Tree.csproj", "{652EF369-15B1-4A66-B158-D30CAEEE6A66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xMassMethod", "xMassMethod\xMassMethod.csproj", "{A7346DCA-F157-4696-AB07-B7D17A8A1B2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{F1D813D3-00E2-46D4-A192-9CED46EC5F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1D813D3-00E2-46D4-A192-9CED46EC5F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1D813D3-00E2-46D4-A192-9CED46EC5F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75A19C0-C7F0-409B-9F3D-C57997B9318A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75A19C0-C7F0-409B-9F3D-C57997B9318A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75A19C0-C7F0-409B-9F3D-C57997B9318A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75A19C0-C7F0-409B-9F3D-C57997B9318A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652EF369-15B1-4A66-B158-D30CAEEE6A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652EF369-15B1-4A66-B158-D30CAEEE6A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652EF369-15B1-4A66-B158-D30CAEEE6A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652EF369-15B1-4A66-B158-D30CAEEE6A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7346DCA-F157-4696-AB07-B7D17A8A1B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7346DCA-F157-4696-AB07-B7D17A8A1B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7346DCA-F157-4696-AB07-B7D17A8A1B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7346DCA-F157-4696-AB07-B7D17A8A1B2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
