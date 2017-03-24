@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalTitles", "ComplexConditions\PersonalTitles.csproj", "{E9875D15-BE98-405B-8AB3-FF7F61F92435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallShop", "SmallShop\SmallShop.csproj", "{E97B1516-3A45-450B-95C2-D4D3C566BEEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Point in Rectangle", "Point in Rectangle\Point in Rectangle.csproj", "{D8D820EE-0654-497F-9D11-94B9FF18E8DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fruit or Vegetable", "Fruit or Vegetable\Fruit or Vegetable.csproj", "{C5F10DEE-C856-4154-9B40-73A365DAE976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invalid Number", "Invalid Number\Invalid Number.csproj", "{F62DAA00-486E-4DEB-B4FD-912A981BF5C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Point on Rectangle Border", "Point on Rectangle Border\Point on Rectangle Border.csproj", "{3850D799-E30C-4D91-9AA8-F1AFF6035F63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9875D15-BE98-405B-8AB3-FF7F61F92435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9875D15-BE98-405B-8AB3-FF7F61F92435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9875D15-BE98-405B-8AB3-FF7F61F92435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9875D15-BE98-405B-8AB3-FF7F61F92435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97B1516-3A45-450B-95C2-D4D3C566BEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97B1516-3A45-450B-95C2-D4D3C566BEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97B1516-3A45-450B-95C2-D4D3C566BEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97B1516-3A45-450B-95C2-D4D3C566BEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D820EE-0654-497F-9D11-94B9FF18E8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D820EE-0654-497F-9D11-94B9FF18E8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D820EE-0654-497F-9D11-94B9FF18E8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D820EE-0654-497F-9D11-94B9FF18E8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F10DEE-C856-4154-9B40-73A365DAE976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F10DEE-C856-4154-9B40-73A365DAE976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F10DEE-C856-4154-9B40-73A365DAE976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F10DEE-C856-4154-9B40-73A365DAE976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62DAA00-486E-4DEB-B4FD-912A981BF5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62DAA00-486E-4DEB-B4FD-912A981BF5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62DAA00-486E-4DEB-B4FD-912A981BF5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62DAA00-486E-4DEB-B4FD-912A981BF5C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3850D799-E30C-4D91-9AA8-F1AFF6035F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3850D799-E30C-4D91-9AA8-F1AFF6035F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3850D799-E30C-4D91-9AA8-F1AFF6035F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3850D799-E30C-4D91-9AA8-F1AFF6035F63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
