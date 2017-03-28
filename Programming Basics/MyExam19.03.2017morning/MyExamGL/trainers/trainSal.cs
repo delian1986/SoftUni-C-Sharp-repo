@@ -28,7 +28,7 @@ namespace trainers
                 {
                     jelev++;
                 }
-                if (name=="royal")
+                else if (name=="royal")
                 {
                     royal++;
                 }
