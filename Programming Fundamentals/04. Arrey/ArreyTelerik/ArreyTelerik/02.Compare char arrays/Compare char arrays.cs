@@ -19,25 +19,35 @@ namespace _02.Compare_char_arrays
             string input = Console.ReadLine();
             string input2 = Console.ReadLine();
 
-            string[] first = new string[] { input };
-            string[] second = new string[] { input2 };
+            int compare = input.Length < input2.Length ? input.Length : input2.Length;
+            var result = "=";
 
-            var res = String.Empty;
+            for (int i = 0; i < compare; i++)
+            {
+                if (input[i]<input2[i])
+                {
+                    result = "<";
+                    break;
+                }
+                if (input[i]>input2[i])
+                {
+                    result = ">";
+                    break;
+                }
+            }
 
-            if (first.Length==second.Length)
+            if (result=="=")
             {
-                res = "=";
+                if (input.Length>input2.Length)
+                {
+                    result = ">";
+                }
+                if (input.Length<input2.Length)
+                {
+                    result = "<";
+                }
             }
-            if (first.Length>second.Length)
-            {
-                res = ">";
-            }
-            if (first.Length<second.Length)
-            {
-                res = "<";
-
-            }
-            Console.WriteLine(res);
+            Console.WriteLine(result);
         }
     }
 }
