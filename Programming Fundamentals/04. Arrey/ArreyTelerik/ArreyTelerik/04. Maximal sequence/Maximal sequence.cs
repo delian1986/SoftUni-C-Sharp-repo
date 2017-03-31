@@ -15,16 +15,22 @@ namespace _04.Maximal_sequence
         {
             int n = int.Parse(Console.ReadLine());
             int []arr = new int[n];
-            var count = 0;
+            var count = 1;
+            var maxCount = 1;
 
             for (int i = 0; i <arr.Length; i++)
             {
 
                 arr[i] = int.Parse(Console.ReadLine());
 
-                if (arr[i]==arr[i-1])
+                if (i>0&&arr[i]==arr[i-1])
                 {
                     count++;
+                    if (count>maxCount)
+                    {
+                        maxCount=count;
+
+                    }
                 }
                 else
                 {
@@ -32,7 +38,8 @@ namespace _04.Maximal_sequence
                 }
                 
             }
-            Console.WriteLine(count);
+            var res = Math.Max(count, maxCount);
+            Console.WriteLine(res);
         }
     }
 }
