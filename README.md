@@ -39,3 +39,6 @@
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/7b83155d42c7fbfa3db76f66934003eef9f703d5/Programming%20Basics/exersiceForExam/december">Basics Exam - 18 December 2016</a></br>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/62c92ac65b872e0542ab02fefff306df72ecc077/Programming%20Basics/exersiceForExam/Basics%20Exam%20-%2018%20March%202017/Basics%20Exam%20-%2018%20March%202017">Basics Exam - 18 March 2017</a></br>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/e6fb79dcd683ad06f6ec58cab0a3bfac347c895a/Programming%20Basics/MyExam19.03.2017morning/MyExamGL"><b>My Basics Exam - 19 March 2017 - Morning</b></a></br>
+
+<!-- TO DO -> I must do and add more exersice solutions!
+I must add the Fundametals content and after to do more exercises-->
