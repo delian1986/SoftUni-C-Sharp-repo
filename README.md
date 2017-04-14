@@ -3,6 +3,6 @@
 <p align = "center">Keep calm and do your homework</p>
 
 <h2> Content</h2>
-<ul><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics">Programming Basics Solutions</a></ul>
+<ul><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics">Programming Basics Couse Solutions</a></ul>
 
 
