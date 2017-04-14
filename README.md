@@ -6,7 +6,7 @@
 <h2> Content</h2>
 
 <!--C# Basics course exercises-->
-<h3><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics">Programming Basics Couse Solutions</a></h3>
+<h3><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics"><b>Programming Basics Couse Solutions</b></a></h3>
 
 <!--Lectures Links-->
 <ol>
@@ -17,7 +17,9 @@
 <li><a href ="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/05.Cycles%20(For%20Loops)">For Loops</a></li>
 <li> <a href = "https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/06.%20Drawing%20with%20Loops">Drawing with Loops</a></li>
 <li><a href= "https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/07.%20Advanced%20Loops">Advanced Loops</a></li>
-
 </ol>
+
+<!-- Additional Solutions-->
+<h4> Additional Basics Solutions</h4>
 
 
