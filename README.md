@@ -21,8 +21,6 @@
 
 <!-- Additional Solutions-->
 <h4> Additional Basics Solutions</h4>
-<a href = "https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/C%20%23%20Telerik">Some C# Telerik Basics Exercise</a>
-
-<a href = "https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/MentorMeeting%2016.09">Mentor Meeting 16.09.2016 with Luci</a>
-
-<a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/Win%20Forms">Some Win Forms Exersices</a>
+<a href = "https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/C%20%23%20Telerik">Some C# Telerik Basics Exercise</a></br>
+<a href = "https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/MentorMeeting%2016.09">Mentor Meeting 16.09.2016 with Luci</a></br>
+<a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/Win%20Forms">Some Win Forms Exersices</a></br>
