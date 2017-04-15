@@ -26,7 +26,7 @@
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/Win%20Forms">Some Win Forms Exersices</a></br>
 
 <!--Adding Exercise Solutions-->
-<h4><b> Exam Solutions</b></h4>
+<h4><b> Basics Exam Solutions</b></h4>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/exersiceForExam/Programming%20Basics%20Lab%20-%2016%20August%202015/Basics%20Lab%20-%2016%20August%202015">Basics Lab - 16 August 2015</a></br>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/exersiceForExam/Exercise%20for%20Exam/Sample%20Coding%20101%20Exam%20-%20Jan%202016/Sample%20Coding%20101%20Exam">Sample Coding 101 Exam - Jan 2016</a></br>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/exersiceForExam/Exercise%20for%20Exam/exam%2021%20February%202016/Problem%2005%20-%20Salt%20And%20Pepper">Basics Exam - 21 February 2016</a></br>
