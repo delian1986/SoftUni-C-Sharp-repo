@@ -31,7 +31,7 @@
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/exersiceForExam/Exercise%20for%20Exam/Sample%20Coding%20101%20Exam%20-%20Jan%202016/Sample%20Coding%20101%20Exam">Sample Coding 101 Exam - Jan 2016</a></br>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics/exersiceForExam/Exercise%20for%20Exam/exam%2021%20February%202016/Problem%2005%20-%20Salt%20And%20Pepper">Basics Exam - 21 February 2016</a></br>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/7b83155d42c7fbfa3db76f66934003eef9f703d5/Programming%20Basics/exersiceForExam/exerciseForExam">Coding 101 Exam - 6 March 2016</a></br>
-<a href ="https://judge.softuni.bg/Contests/179/Coding-101-Exam-26-March-2016">Exam - 26 March 2016</a></br>
+<a href ="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/6ccf8a569c4be6e85c5e2bbb9b8a1b54a0646b6e/Programming%20Basics/exersiceForExam/Exercise%20for%20Exam">Exam - 26 March 2016</a></br>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/6ccf8a569c4be6e85c5e2bbb9b8a1b54a0646b6e/Programming%20Basics/exersiceForExam/Exercise%20for%20Exam">Basics Exam - 17 July 2016</a></br>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/6ccf8a569c4be6e85c5e2bbb9b8a1b54a0646b6e/Programming%20Basics/exersiceForExam/Exercise%20for%20Exam">Basics Exam - 28 August 2016</a></br>
 <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/7b83155d42c7fbfa3db76f66934003eef9f703d5/Programming%20Basics/exersiceForExam/exam%20november%2020%20morning">Basics Exam - 20 November 2016 - Morning</a></br>
