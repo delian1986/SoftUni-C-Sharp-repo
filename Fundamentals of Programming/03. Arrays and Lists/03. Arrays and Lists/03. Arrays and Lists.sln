@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Triple Sum", "03. Tripl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Sum Arrays", "04. Sum Arrays\04. Sum Arrays.csproj", "{AABEB1C1-16FF-45DC-92E4-EC305ED1878D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Condense Array to Number", "05. Condense Array to Number\05. Condense Array to Number.csproj", "{B99D3315-305C-4222-85D7-FA64FA27BC13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Extract Middle 1, 2 or 3 Elements", "06. Extract Middle 1, 2 or 3 Elements\06. Extract Middle 1, 2 or 3 Elements.csproj", "{355D8B45-F605-43F4-959F-82264C5A1B73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{AABEB1C1-16FF-45DC-92E4-EC305ED1878D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AABEB1C1-16FF-45DC-92E4-EC305ED1878D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AABEB1C1-16FF-45DC-92E4-EC305ED1878D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99D3315-305C-4222-85D7-FA64FA27BC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99D3315-305C-4222-85D7-FA64FA27BC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99D3315-305C-4222-85D7-FA64FA27BC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99D3315-305C-4222-85D7-FA64FA27BC13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{355D8B45-F605-43F4-959F-82264C5A1B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355D8B45-F605-43F4-959F-82264C5A1B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355D8B45-F605-43F4-959F-82264C5A1B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355D8B45-F605-43F4-959F-82264C5A1B73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

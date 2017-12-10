@@ -15,10 +15,9 @@ namespace _06.Reverse_Array_of_Strings
 
             var first = itemsArray[0];
 
-            for (int i = 0; i < itemsArray.Length; i++)
+            for (int i = itemsArray.Length-1; i >=0; i--)
             {
-                itemsArray[0] = itemsArray[itemsArray.Length-1];
-                itemsArray[itemsArray.Length-1] = first;
+                
                 Console.WriteLine(itemsArray[i]);
 
             }
