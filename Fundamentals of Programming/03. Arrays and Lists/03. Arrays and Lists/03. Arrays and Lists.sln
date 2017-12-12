@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27. Array Manipulator", "27
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Pairs by Difference", "16. Pairs by Difference\16. Pairs by Difference.csproj", "{DC503993-EC08-4494-8156-8548CF5AB5D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Largest Common End", "08. Largest Common End\08. Largest Common End.csproj", "{EC087A49-B18B-4407-9BA2-94E8A8836C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Rotate and Sum", "09. Rotate and Sum\09. Rotate and Sum.csproj", "{7AAA7F83-E496-4F0D-AA0F-35FE5EB2F081}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{DC503993-EC08-4494-8156-8548CF5AB5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC503993-EC08-4494-8156-8548CF5AB5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC503993-EC08-4494-8156-8548CF5AB5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC087A49-B18B-4407-9BA2-94E8A8836C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC087A49-B18B-4407-9BA2-94E8A8836C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC087A49-B18B-4407-9BA2-94E8A8836C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC087A49-B18B-4407-9BA2-94E8A8836C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AAA7F83-E496-4F0D-AA0F-35FE5EB2F081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AAA7F83-E496-4F0D-AA0F-35FE5EB2F081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AAA7F83-E496-4F0D-AA0F-35FE5EB2F081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AAA7F83-E496-4F0D-AA0F-35FE5EB2F081}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
