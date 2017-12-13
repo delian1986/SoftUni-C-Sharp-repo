@@ -10,25 +10,26 @@ namespace _09.Rotate_and_Sum
     {
         static void Main(string[] args)
         {
-            List<int> inputList = Console.ReadLine().Split().Select(int.Parse).ToList();
+            int[] myArr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
             int num = int.Parse(Console.ReadLine());
-
-            List<int> impList = new List<int>();
-
-
-            List<int> myList = new List<int>();
+            int[] sumArr = new int[myArr.Length];
 
             for (int i = 0; i < num; i++)
             {
-                int temp = inputList[inputList.Count - 1];
-                for (int j = inputList.Count-1; j >=1; j++)
+                int last = myArr.Last();
+                for (int j = myArr.Length - 1; j > 0; j--)
                 {
-                    inputList[j] = inputList[j - 1];
+                    myArr[j] = myArr[j - 1];
                 }
-                inputList[0] = temp;
+                myArr[0] = last;
+
+                for (int z = 0; z < sumArr.Length; z++)
+                {
+                    sumArr[z] += myArr[z];
+                }
             }
-
-
+            Console.WriteLine(string.Join(" ", sumArr));
         }
     }
 }

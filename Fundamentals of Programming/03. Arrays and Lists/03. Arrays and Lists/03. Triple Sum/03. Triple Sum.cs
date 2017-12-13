@@ -10,41 +10,28 @@ namespace _03.Triple_Sum
     {
         static void Main(string[] args)
         {
-            int[] nums = Console.ReadLine().Split().Select(s => int.Parse(s)).ToArray();
-            var numer = 0;
-            var prevNum = 0;
+            List<int> myList = Console.ReadLine().Split().Select(int.Parse).ToList();
+
             bool found = false;
 
-            for (int i = 0; i < nums.Length; i++)
+            for (int i = 0; i < myList.Count; i++)
             {
-                numer = nums[i];
-                for (int j = 1; j < nums.Length; j++)
+                for (int j = i+1; j < myList.Count; j++)
                 {
-
-                    prevNum = nums[j];
-                    if (i == j)
+                    var sum = myList[i] + myList[j];
+                    if (myList.Contains(sum))
                     {
-                        continue;
-                    }
-
-                    for (int k = 0; k < nums.Length; k++)
-                    {
-                        if (prevNum + numer == nums[k] && i < j)
-                        {
-                            found = true;
-                            Console.WriteLine(($"{(numer)} + {(prevNum)} == {(nums[k])}"));
-                        }
-
+                        Console.WriteLine($"{myList[i]} + {myList[j]} == {sum}");
+                        found = true;
                     }
 
                 }
             }
-
-            if (!found)
+            if (found == false)
             {
                 Console.WriteLine("No");
-
             }
+
         }
     }
 }
