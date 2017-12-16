@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1544854-FE7E-4C63-9692-169978F48BA6}</ProjectGuid>
+    <ProjectGuid>{B287B72E-A202-4409-8593-5748C6CF41DC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_05.A_Miner_Task</RootNamespace>
-    <AssemblyName>_05.A_Miner_Task</AssemblyName>
+    <RootNamespace>_07.Hands_of_Cards</RootNamespace>
+    <AssemblyName>_07.Hands_of_Cards</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="05. A Miner Task.cs" />
+    <Compile Include="07. Hands of Cards.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
