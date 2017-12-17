@@ -11,7 +11,7 @@ namespace _19.Append_Lists
         static void Main(string[] args)
         {
             List<string> input = Console.ReadLine().Split(new[] { "|" }, StringSplitOptions.RemoveEmptyEntries)
-    .Select(s => s.Trim())
+    .Select(s => s.TrimEnd())
     .ToList();
 
             List<string> result = new List<string>().ToList();
@@ -20,10 +20,10 @@ namespace _19.Append_Lists
             {
                 result.Insert(0, input[i]);
             }
-
             
 
-                Console.WriteLine(string.Join(" ", result));
+
+            Console.WriteLine(string.Join(" ", result));
         }
     }
 }

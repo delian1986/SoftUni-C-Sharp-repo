@@ -10,18 +10,14 @@ namespace _16.Pairs_by_Difference
     {
         static void Main(string[] args)
         {
-            List<int> myList = Console.ReadLine().Split().Select(int.Parse).ToList();
+            int[] myList = Console.ReadLine().Split().Select(int.Parse).ToArray();
             int num = int.Parse(Console.ReadLine());
             var count = 0;
-            for (int i = 0; i < myList.Count; i++)
+            for (int i = 0; i < myList.Length; i++)
             {
-                for (int j = i; j <= myList.Count ; j++)
+                for (int j = i; j < myList.Length; j++)
                 {
-                    //if (j==i)
-                    //{
-                    //    continue;
-                    //}
-                    if (Math.Abs(myList[i]- myList[j])==num)
+                    if ((myList[i] - myList[j]) == num || myList[j] - myList[i] == num)
                     {
                         count++;
                     }

@@ -14,7 +14,7 @@ namespace _11.Compare_Char_Arrays
             char[] text1 = Console.ReadLine().Split().Select(char.Parse).ToArray();
 
             bool first = false;
-            bool sec = false;
+           //bool sec = false;
 
             if (text.Length == text1.Length)
             {

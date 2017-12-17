@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -14,16 +13,14 @@ namespace _27.Array_Manipulator
         {
             List<int> myList = Console.ReadLine().Split().Select(int.Parse).ToList();
 
-            var commnad = String.Empty;
+            string[] command = Console.ReadLine().Split().ToArray();
 
-            while (commnad != "print")
+            while (command[0] != "print")
             {
-                commnad = Console.ReadLine().ToLower();
-                string output = Regex.Match(commnad, @"\d+").Value;
 
-                if (commnad == "add" && commnad == "addmany")
+                if (command[0] == "add" && command[0] == "addmany")
                 {
-
+                    myList.Insert(command[1], command[2]);
                 }
             }
         }

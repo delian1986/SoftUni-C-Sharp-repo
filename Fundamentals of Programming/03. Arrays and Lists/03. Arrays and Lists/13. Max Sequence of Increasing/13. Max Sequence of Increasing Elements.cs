@@ -10,56 +10,57 @@ namespace _13.Max_Sequence_of_Increasing
     {
         static void Main(string[] args)
         {
-            int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            List<int> resList = new List<int>();
-            List<int> tempList = new List<int>();
+            long[] inputLine = Console.ReadLine().Split().Select(long.Parse).ToArray();
+            List<long> nums = new List<long>();
+            List<long> temp = new List<long>();
+            List<long> left = new List<long>();
+            var count = 0;
 
-
-            var count = 1;
-            var max = 0;
-
-
-            for (int i = 0; i < arr.Length - 1; i++)
+            for (int i = 0; i < inputLine.Length - 1; i++)
             {
-                if (arr[i] < arr[i + 1])
+                if (inputLine[i] < inputLine[i + 1])
                 {
-                    count++;
-                    if (max < count)
+                    nums.Add(inputLine[i]);
+                    nums.Add(inputLine[i + 1]);
+                    if (nums.Count > 2 && nums.Contains(inputLine[i]))
                     {
-                        resList.Add(arr[i]);
-                        resList.Add(arr[i+1]);
-                        for (int j = 0; j <resList.Count-1; j++)
-                        {
-                            if (resList[j]==resList[j+1])
-                            {
-                                resList.Remove(resList[j]);
-                            }
-                        }
-                        tempList = resList;
+                        nums.Remove(inputLine[i]);
                     }
-                    else if (arr[i]>arr[i+1])
+                    if (count==0)
                     {
-                        tempList.Add(arr[i]);
-                        tempList.Add(arr[i + 1]);
-                        for (int j = 0; j < resList.Count - 1; j++)
-                        {
-                            if (tempList[j] == tempList[j + 1])
-                            {
-                                resList.Remove(resList[j]);
-                            }
-                        }
+                        left = nums;
+
                     }
-
-
                 }
-                else
+                if (inputLine[i] >= inputLine[i + 1])
                 {
-                    count = 1;
-                    //resList.Clear();
+                    if (nums.Count >= temp.Count)
+                    {
+                        count++;
+                        temp = nums;
+                        nums = new List<long>();
+
+
+
+                    }
                 }
             }
 
-            Console.WriteLine(string.Join(" ", resList));
+            if (nums.Count>temp.Count)
+            {
+
+            Console.WriteLine(string.Join(" ", nums));
+            }
+            else if (temp.Count==left.Count||left.Count>temp.Count||left.Count==nums.Count)
+            {
+                Console.WriteLine(string.Join(" ", left));
+
+            }
+            else
+            {
+                Console.WriteLine(string.Join(" ", temp));
+
+            }
         }
     }
 }
