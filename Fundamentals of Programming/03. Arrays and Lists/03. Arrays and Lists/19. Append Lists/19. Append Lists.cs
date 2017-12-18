@@ -10,17 +10,25 @@ namespace _19.Append_Lists
     {
         static void Main(string[] args)
         {
-            List<string> input = Console.ReadLine().Split(new[] { "|" }, StringSplitOptions.RemoveEmptyEntries)
-    .Select(s => s.TrimEnd())
-    .ToList();
+            List<string> input = Console.ReadLine().Split('|').ToList();
 
             List<string> result = new List<string>().ToList();
 
-            for (int i = 0; i < input.Count; i++)
+            foreach (var item in input)
             {
-                result.Insert(0, input[i]);
+                List<string> nums = item.Split().ToList();
+                nums.Reverse();
+
+                foreach (var number in nums)
+                {
+                    if (number!="")
+                    {
+                        result.Insert(0, number);
+                    }
+                }
             }
-            
+
+
 
 
             Console.WriteLine(string.Join(" ", result));
