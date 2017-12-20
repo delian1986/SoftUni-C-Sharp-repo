@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B287B72E-A202-4409-8593-5748C6CF41DC}</ProjectGuid>
+    <ProjectGuid>{E090AB50-B605-428B-900F-C39AB2B3EA59}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_07.Hands_of_Cards</RootNamespace>
-    <AssemblyName>_07.Hands_of_Cards</AssemblyName>
+    <RootNamespace>_07.Hands_of_Cardsv2</RootNamespace>
+    <AssemblyName>_07.Hands_of_Cardsv2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="07. Hands of Cards.cs" />
+    <Compile Include="07. Hands of Cardsv2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
