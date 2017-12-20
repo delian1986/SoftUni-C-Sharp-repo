@@ -16,50 +16,28 @@ namespace _13.Max_Sequence_of_Increasing
             List<long> left = new List<long>();
             var count = 0;
 
-            for (int i = 0; i < inputLine.Length - 1; i++)
+            for (int i =0; i < inputLine.Length-1; i++)
             {
-                if (inputLine[i] < inputLine[i + 1])
+                if (inputLine[i]<inputLine[i+1])
                 {
                     nums.Add(inputLine[i]);
                     nums.Add(inputLine[i + 1]);
-                    if (nums.Count > 2 && nums.Contains(inputLine[i]))
+
+                    if (nums.Count!=2)
                     {
-                        nums.Remove(inputLine[i]);
+                        nums.Remove(nums[i]);
                     }
-                    if (count==0)
+                    if (count == 0)
                     {
                         left = nums;
-
                     }
                 }
-                if (inputLine[i] >= inputLine[i + 1])
+                else if (inputLine[i]>=inputLine[i+1])
                 {
-                    if (nums.Count >= temp.Count)
-                    {
-                        count++;
-                        temp = nums;
-                        nums = new List<long>();
-
-
-
-                    }
+                    count++;
+                    temp = nums;
+                    nums = new List<long>();
                 }
-            }
-
-            if (nums.Count>temp.Count)
-            {
-
-            Console.WriteLine(string.Join(" ", nums));
-            }
-            else if (temp.Count==left.Count||left.Count>temp.Count||left.Count==nums.Count)
-            {
-                Console.WriteLine(string.Join(" ", left));
-
-            }
-            else
-            {
-                Console.WriteLine(string.Join(" ", temp));
-
             }
         }
     }

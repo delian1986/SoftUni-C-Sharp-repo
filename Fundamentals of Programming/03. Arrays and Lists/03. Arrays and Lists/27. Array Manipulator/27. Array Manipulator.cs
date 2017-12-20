@@ -2,101 +2,89 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace _27.Array_Manipulator
+namespace _03.ArrayManiupulator
 {
-    class Program
+    class ArrayManipulator
     {
         static void Main(string[] args)
         {
-            List<int> myList = Console.ReadLine().Split().Select(int.Parse).ToList();
+            var input = Console.ReadLine().Split().Select(int.Parse).ToList();
 
-            var command = Console.ReadLine().ToLower().Split();
+            string[] command = Console.ReadLine().Split();
 
             while (command[0] != "print")
             {
-                List<int> nums = new List<int>();
-
-                //parse the nums as numbers
-                for (int i = 1; i < command.Length; i++)
+                switch (command[0])
                 {
-                    nums.Add(int.Parse(command[i]));
-
-                }
-
-                //if - else if logic
-                if (command[0] == "add")
-                {
-                    myList.Insert(nums[0], nums[1]);
-                }
-
-                else if (command[0] == "addmany")
-                {
-
-                    myList.InsertRange(nums[0], nums.Skip(1));
-                    
-
-                }
-
-                else if (command[0] == "contains")
-                {
-                    if (myList.Contains(nums[0]))
-                    {
-                        for (int i = 0; i < myList.Count; i++)
+                    case "add":
+                        input.Insert(int.Parse(command[1]), int.Parse(command[2]));
+                        break;
+                    case "addMany":
+                        List<int> range = new List<int>();
+                        for (int i = 2; i < command.Length; i++)
                         {
-                            if (nums[0] == myList[i])
+                            range.Add(int.Parse(command[i]));
+                        }
+                        input.InsertRange(int.Parse(command[1]), range);
+                        break;
+                    case "contains":
+                        if (input.Contains(int.Parse(command[1])))
+                        {
+                            Console.WriteLine(input.IndexOf(int.Parse(command[1])));
+                        }
+                        else
+                        {
+                            Console.WriteLine("-1");
+                        }
+                        break;
+                    case "remove":
+                        input.RemoveAt(int.Parse(command[1]));
+                        break;
+                    case "shift":
+                        for (int k = 0; k < int.Parse(command[1]); k++)
+                        {
+                            int firstElement = input[0];
+                            for (int i = 0; i < input.Count - 1; i++)
                             {
-                                Console.WriteLine(i);
-                                break;
+                                input[i] = input[i + 1];
                             }
+                            input[input.Count - 1] = firstElement;
                         }
-                    }
-                    else
-                    {
-                        Console.WriteLine(-1);
-                    }
-                }
-
-                else if (command[0] == "remove")
-                {
-                    myList.RemoveAt(nums[0]);
-                }
-
-                else if (command[0] == "shift")
-                {
-                    for (int i = 0; i < nums[0]; i++)
-                    {
-                        int first = myList[0];
-                        int last = myList.Last();
-                        for (int j = 0; j < myList.Count - 1; j++)
+                        break;
+                    case "sumPairs":
+                        List<int> sumPairs = new List<int>();
+                        if (input.Count % 2 == 0)
                         {
-                            myList[j] = myList[j + 1];
+                            for (int i = 0; i < input.Count; i += 2)
+                            {
+                                int sum = input[i] + input[i + 1];
+                                sumPairs.Add(sum);
+                            }
+                            input = sumPairs;
                         }
-                        myList[myList.Count - 1] = first;
-                    }
-                }
-
-                else if (command[0] == "sumpairs")
-                {
-                    for (int i = 0; i < myList.Count - 1; i++)
-                    {
+                        else
                         {
-                            myList[i] = myList[i] + myList[i + 1];
-                            myList.Remove(myList[i + 1]);
-
+                            input.Add(0);
+                            for (int i = 0; i < input.Count; i += 2)
+                            {
+                                int sum = input[i] + input[i + 1];
+                                sumPairs.Add(sum);
+                            }
+                            input = sumPairs;
                         }
-                    }
+
+                        break;
+                    default:
+                        break;
                 }
 
-                //input
-                command = Console.ReadLine().ToLower().Split();
-
+                command = Console.ReadLine().Split();
             }
 
             Console.Write("[");
-            Console.Write(string.Join(", ", myList));
+            Console.Write(string.Join(", ", input));
             Console.WriteLine("]");
         }
     }
