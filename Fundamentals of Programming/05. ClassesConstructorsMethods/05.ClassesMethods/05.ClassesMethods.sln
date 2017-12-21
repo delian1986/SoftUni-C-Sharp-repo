@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Blank Receipt", "01.Blank Receipt\01.Blank Receipt.csproj", "{CC20AE2E-1A7E-47D4-B55D-E6776A92AB75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.Classes Methods", "0.Classes Methods\0.Classes Methods.csproj", "{328EAA99-D7E0-4637-BB7C-13AF5C347A2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Sign of Integer Number", "02. Sign of Integer Number\02. Sign of Integer Number.csproj", "{7D323D70-B926-46BA-84EF-A4C46FB268A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Printing Triangle2", "03. Printing Triangle2\03. Printing Triangle2.csproj", "{1813ADC6-7E92-4ADA-8522-B6A7585EB617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Calculate Triangle Area", "04. Calculate Triangle Area\04. Calculate Triangle Area.csproj", "{F21417F8-C825-4253-B665-07A38CF9FD90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Greater of Two Values", "05. Greater of Two Values\05. Greater of Two Values.csproj", "{33C93DF1-1E4D-4E6B-8341-EC2E2B078DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC20AE2E-1A7E-47D4-B55D-E6776A92AB75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC20AE2E-1A7E-47D4-B55D-E6776A92AB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC20AE2E-1A7E-47D4-B55D-E6776A92AB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC20AE2E-1A7E-47D4-B55D-E6776A92AB75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328EAA99-D7E0-4637-BB7C-13AF5C347A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328EAA99-D7E0-4637-BB7C-13AF5C347A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328EAA99-D7E0-4637-BB7C-13AF5C347A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328EAA99-D7E0-4637-BB7C-13AF5C347A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D323D70-B926-46BA-84EF-A4C46FB268A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D323D70-B926-46BA-84EF-A4C46FB268A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D323D70-B926-46BA-84EF-A4C46FB268A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D323D70-B926-46BA-84EF-A4C46FB268A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1813ADC6-7E92-4ADA-8522-B6A7585EB617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1813ADC6-7E92-4ADA-8522-B6A7585EB617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1813ADC6-7E92-4ADA-8522-B6A7585EB617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1813ADC6-7E92-4ADA-8522-B6A7585EB617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21417F8-C825-4253-B665-07A38CF9FD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21417F8-C825-4253-B665-07A38CF9FD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21417F8-C825-4253-B665-07A38CF9FD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21417F8-C825-4253-B665-07A38CF9FD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C93DF1-1E4D-4E6B-8341-EC2E2B078DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C93DF1-1E4D-4E6B-8341-EC2E2B078DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C93DF1-1E4D-4E6B-8341-EC2E2B078DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C93DF1-1E4D-4E6B-8341-EC2E2B078DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43F113AA-21F2-42AA-A8E3-768B646C2A5A}
+	EndGlobalSection
+EndGlobal
