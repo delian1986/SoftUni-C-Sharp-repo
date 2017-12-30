@@ -28,8 +28,29 @@ namespace _05.Greater_of_Two_Values
             {
                 char val1 = char.Parse(Console.ReadLine());
                 char val2 = char.Parse(Console.ReadLine());
-                Console.WriteLine(val1.CompareTo(val2));
+                if (val1>val2)
+                {
+                    Console.WriteLine(val1);
+                }
+                else
+                {
+                    Console.WriteLine(val2);
+                }
+            }
+            else if (input =="string")
+            {
+                string val1 = Console.ReadLine();
+                string val2 = Console.ReadLine();
 
+                string[] comparer =
+                {
+                    val2,
+                    val1,
+                    val1,
+
+                };
+                var comp= (val1.CompareTo(val2)+1);
+                Console.WriteLine(comparer[comp]);
             }
         }
     }
