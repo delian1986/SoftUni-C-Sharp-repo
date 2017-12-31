@@ -23,12 +23,13 @@ namespace _20.Book_Library
                 myDic[input[1]] += price;
             }
 
-            foreach (var item in myDic.OrderByDescending(x=>x.Value).ThenBy(x =>x.Key))
+            foreach (var item in myDic.OrderByDescending(x => x.Value).ThenBy(x => x.Key))
             {
                 Console.WriteLine($"{item.Key} -> {item.Value:f2}");
             }
 
         }
     }
+}
 
   
