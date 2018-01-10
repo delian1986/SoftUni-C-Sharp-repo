@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Blank Receipt", "01.Blank Receipt\01.Blank Receipt.csproj", "{CC20AE2E-1A7E-47D4-B55D-E6776A92AB75}"
 EndProject
@@ -56,6 +56,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Master Numbers", "12. Master Numbers\12. Master Numbers.csproj", "{2BFD837C-D786-41B1-BDD4-820066B311B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Center Point", "10. Center Point\10. Center Point.csproj", "{24A45D8C-3B54-47D0-A143-249D02FB8ECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23. Mentor Group", "23. Mentor Group\23. Mentor Group.csproj", "{2FB4084A-98DD-4AFD-A59D-5649DD4B4B80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{24A45D8C-3B54-47D0-A143-249D02FB8ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24A45D8C-3B54-47D0-A143-249D02FB8ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24A45D8C-3B54-47D0-A143-249D02FB8ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB4084A-98DD-4AFD-A59D-5649DD4B4B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB4084A-98DD-4AFD-A59D-5649DD4B4B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB4084A-98DD-4AFD-A59D-5649DD4B4B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB4084A-98DD-4AFD-A59D-5649DD4B4B80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
