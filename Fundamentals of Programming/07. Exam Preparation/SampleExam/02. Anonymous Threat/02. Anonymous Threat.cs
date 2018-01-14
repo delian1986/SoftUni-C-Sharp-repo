@@ -16,27 +16,57 @@ class AnunymousThreat
 
         while (line[0] != "3:1")
         {
-            string commant = line[0];
-            int starIndex = int.Parse(line[1]);
+            string command = line[0];
+            int startIndex = int.Parse(line[1]);
             int endIndex = int.Parse(line[2]);
 
-            if (commant == "merge")
+            if (command == "merge")
             {
-                var merge = String.Empty;
 
                 if (endIndex >= input.Length)
                 {
                     endIndex = input.Length - 1;
                 }
-                for (int i = starIndex; i <= endIndex; i++)
+                if (startIndex<0)
                 {
-                    merge += String.Concat(input[i]);
+                    startIndex = 0;
                 }
-                list.Add(merge);
-                list.Add(endIndex, input.Length);
+                if (endIndex<0)
+                {
+                    endIndex = 0;
+                }
+
+                // first part
+                for (int i = 0; i < startIndex; i++)
+                {
+                    list.Add(input[i]);
+                }
+
+                //mid part
+                StringBuilder merge = new StringBuilder();
+                for (int i = startIndex; i <=endIndex; i++)
+                {
+                    merge.Append(input[i]);
+                }
+                string merged = merge.ToString();
+                list.Add(merged);
+                merge.Clear();
+
+                //lastPart
+
+                for (int i = endIndex; i < input.Length; i++)
+                {
+                    list.Add(input[i]);
+                }
             }
+            line = Console.ReadLine().Split();
+
         }
 
+        foreach (string s in list)
+            {
+                Console.WriteLine(s);
+            }
 
     }
 }

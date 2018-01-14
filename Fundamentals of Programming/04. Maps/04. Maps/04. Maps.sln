@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0. Maps", "0. Maps\0. Maps.csproj", "{9B1ADD90-0180-404F-B3B3-7A002A76C54A}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Legendary Farming", "11. Legendary Farming\11. Legendary Farming.csproj", "{5AC68016-862D-491E-8191-3C2010874AD9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "toDoDragonArmy_UserLogs", "toDoDragonArmy_UserLogs\toDoDragonArmy_UserLogs.csproj", "{4280C074-57B1-4465-AECA-21BEF984D556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.0UserLogs", "08.0UserLogs\08.0UserLogs.csproj", "{E3FBF40E-641D-4AB9-A7E3-EB93E9E20130}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{4280C074-57B1-4465-AECA-21BEF984D556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4280C074-57B1-4465-AECA-21BEF984D556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4280C074-57B1-4465-AECA-21BEF984D556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3FBF40E-641D-4AB9-A7E3-EB93E9E20130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FBF40E-641D-4AB9-A7E3-EB93E9E20130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FBF40E-641D-4AB9-A7E3-EB93E9E20130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FBF40E-641D-4AB9-A7E3-EB93E9E20130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

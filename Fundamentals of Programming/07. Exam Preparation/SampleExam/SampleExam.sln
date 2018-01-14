@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Anonymous Downsite", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Anonymous Threat", "02. Anonymous Threat\02. Anonymous Threat.csproj", "{2AB15818-114B-4C13-A520-F997C53D4F71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Anonymous Cache", "03. Anonymous Cache\03. Anonymous Cache.csproj", "{9DA919E3-F28C-423D-ABEA-2C39EF032F74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2AB15818-114B-4C13-A520-F997C53D4F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AB15818-114B-4C13-A520-F997C53D4F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AB15818-114B-4C13-A520-F997C53D4F71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA919E3-F28C-423D-ABEA-2C39EF032F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA919E3-F28C-423D-ABEA-2C39EF032F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA919E3-F28C-423D-ABEA-2C39EF032F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA919E3-F28C-423D-ABEA-2C39EF032F74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
