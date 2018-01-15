@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4280C074-57B1-4465-AECA-21BEF984D556}</ProjectGuid>
+    <ProjectGuid>{757F2606-941A-47D2-8055-202DEE3D8EF1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>toDoDragonArmy_UserLogs</RootNamespace>
-    <AssemblyName>toDoDragonArmy_UserLogs</AssemblyName>
+    <RootNamespace>_04.DragonArmy</RootNamespace>
+    <AssemblyName>_04.DragonArmy</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DragonArmy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
