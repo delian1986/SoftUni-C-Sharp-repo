@@ -4,111 +4,111 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _22.Andrey_And_Billiard
+class AndreyAndBilliard
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        Dictionary<string, decimal> shopAvalableProducts = new Dictionary<string, decimal>();
+        List<decimal> totalBill = new List<decimal>();
+        List<Customer> clientsList = new List<Customer>();
+
+        int incProducts = int.Parse(Console.ReadLine());
+        for (int i = 0; i < incProducts; i++)
         {
-            var shopingList = new SortedDictionary<string, decimal>();
-            string[] input = new string[3];
-            List<Customer> custList = new List<Customer>();
+            string[] tokens = Console.ReadLine().Split('-');
 
-            var total = new Customer();
+            string product = tokens[0];
+            decimal productPrice = decimal.Parse(tokens[1]);
 
-            int n = int.Parse(Console.ReadLine());
-            input = ShopingList(shopingList, input, n);
-
-            while (true)
+            if (!shopAvalableProducts.ContainsKey(product))
             {
-                input = Console.ReadLine().Split('-', ',');
+                shopAvalableProducts.Add(product, productPrice);
+            }
+            else
+            {
+                shopAvalableProducts[product] = productPrice;
+            }
+        }
 
-                if (input[0] == "end of clients")
+        while (true)
+        {
+            string clientQue = Console.ReadLine();
+            if (clientQue == "end of clients")
+            {
+                break;
+            }
+
+            string[] tokents = clientQue.Split('-', ',');
+            string user = tokents[0];
+            string product = tokents[1];
+            int quantity = int.Parse(tokents[2]);
+
+            Customer newCust = new Customer();
+
+
+            if (shopAvalableProducts.ContainsKey(product))
+            {
+                newCust.Name = user;
+                newCust.Orders = new Dictionary<string, int>();
+                newCust.Orders.Add(product, quantity);
+
+
+                if (clientsList.Any(c => c.Name == user))
                 {
-                    break;
-                }
-
-                if (!shopingList.ContainsKey(input[1]))
-                {
-                    continue;
-                }
-
-                Customer client = new Customer();
-                var clientName = input[0];
-                var product = input[1];
-                var quantity = int.Parse(input[2]);
-
-
-                client.Name = clientName;
-                client.Orders = new SortedDictionary<string, int>();
-
-                if (!client.Orders.ContainsKey(product))
-                {
-                    client.Orders.Add(product, quantity);
-                }
-                else
-                {
-                    client.Orders[product] += quantity;
-                }
-                custList.Add(client);
-
-                if (custList.Any(x => x.Name == client.Name))
-                {
-                    var cust = custList.Where(x => x.Name == client.Name).First();
-
-                    if (cust.Orders.ContainsKey(product))
+                    Customer existingCust = clientsList.First(c => c.Name == user);
+                    if (existingCust.Orders.ContainsKey(product))
                     {
-                        cust.Orders[product] += quantity;
+                        existingCust.Orders[product] += quantity;
                     }
                     else
                     {
-                        cust.Orders.Add(product, quantity);
+                        existingCust.Orders[product] = quantity;
                     }
-                }
-                client.Bill += shopingList[product] * quantity;
-
-                total.TotalBill += client.Bill;
-            }
-
-            foreach (var c in custList.OrderBy(x => x.Name))
-            {
-                Console.WriteLine(c.Name);
-                foreach (var item in c.Orders)
-                {
-                    Console.WriteLine($"-- {item.Key} - {item.Value}");
-                    Console.WriteLine($"Bill: {c.Bill:f2}");
-                }
-            }
-            Console.WriteLine($"Total bill: {total.TotalBill:f2}");
-
-
-        }
-
-        private static string[] ShopingList(SortedDictionary<string, decimal> shopingList, string[] input, int n)
-        {
-            for (int i = 0; i < n; i++)
-            {
-                input = Console.ReadLine().Split('-').ToArray();
-                if (!shopingList.ContainsKey(input[0]))
-                {
-                    shopingList.Add(input[0], decimal.Parse(input[1]));
                 }
                 else
                 {
-                    shopingList[input[0]] = decimal.Parse(input[1]);
+                    clientsList.Add(newCust);
+
                 }
+
+                foreach (var name in clientsList)
+                {
+                    foreach (var item in shopAvalableProducts)
+                    {
+                        if (item.Key == product&&name.Name==newCust.Name)
+                        {
+                            name.Bill += item.Value * quantity;
+                            totalBill.Add(item.Value*quantity);
+                        }
+                    }
+
+                }
+
+
             }
 
-            return input;
+
         }
+        foreach (var name in clientsList.OrderBy(x => x.Name).ThenBy(x => x.Bill))
+        {
+            Console.WriteLine(name.Name);
+            foreach (var item in name.Orders)
+            {
+                Console.WriteLine($"-- {item.Key} - {item.Value}");
+            }
+            Console.WriteLine($"Bill: {name.Bill:f2}");
+        }
+        Console.WriteLine($"Total bill: {totalBill.Sum():f2}");
+
     }
 
+}
 
-    public class Customer
-    {
-        public string Name { get; set; }
-        public SortedDictionary<string, int> Orders { get; set; }
-        public decimal Bill { get; set; }
-        public decimal TotalBill { get; set; }
-    }
+
+public class Customer
+{
+    public string Name { get; set; }
+    public Dictionary<string, int> Orders { get; set; }
+    public decimal Bill { get; set; }
+    public decimal TotalBill { get; set; }
 }
