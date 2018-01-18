@@ -23,9 +23,9 @@ class AnunymousThreat
             if (command == "merge")
             {
 
-                if (endIndex >= input.Length)
+                if (endIndex >= list.Count)
                 {
-                    endIndex = input.Length - 1;
+                    endIndex = list.Count - 1;
                 }
                 if (startIndex<0)
                 {
@@ -63,10 +63,6 @@ class AnunymousThreat
 
         }
 
-        foreach (string s in list)
-            {
-                Console.WriteLine(s);
-            }
-
+        Console.WriteLine(string.Join("",list));
     }
 }

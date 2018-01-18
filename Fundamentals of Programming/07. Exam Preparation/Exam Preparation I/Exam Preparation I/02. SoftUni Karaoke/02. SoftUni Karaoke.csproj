@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{291A2690-A7C6-4495-81B8-9CBBC8DE42AA}</ProjectGuid>
+    <ProjectGuid>{4024D5D5-1D9B-4509-97FB-BAF9FCF1B242}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_05January2018Part_II</RootNamespace>
-    <AssemblyName>05January2018Part II</AssemblyName>
+    <RootNamespace>_02.SoftUni_Karaoke</RootNamespace>
+    <AssemblyName>_02.SoftUni_Karaoke</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="60-100.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

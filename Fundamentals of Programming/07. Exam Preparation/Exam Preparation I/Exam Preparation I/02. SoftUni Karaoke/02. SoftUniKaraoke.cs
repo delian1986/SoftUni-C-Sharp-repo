@@ -4,16 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Problem_2___Snowmen
+namespace _02.SoftUni_Karaoke
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
-            int[] tokens = Console.ReadLine().Split().Select(s=>int.Parse(s)).ToArray();
-
-
         }
     }
 }
