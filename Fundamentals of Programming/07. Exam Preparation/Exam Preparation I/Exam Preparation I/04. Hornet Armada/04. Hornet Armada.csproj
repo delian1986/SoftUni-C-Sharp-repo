@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4024D5D5-1D9B-4509-97FB-BAF9FCF1B242}</ProjectGuid>
+    <ProjectGuid>{3097B8C1-45D1-4B5D-B96B-0E80D2031F86}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02.SoftUni_Karaoke</RootNamespace>
-    <AssemblyName>_02.SoftUni_Karaoke</AssemblyName>
+    <RootNamespace>_04.Hornet_Armada</RootNamespace>
+    <AssemblyName>_04.Hornet_Armada</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="02. SoftUniKaraoke.cs" />
+    <Compile Include="HornetArmada.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
