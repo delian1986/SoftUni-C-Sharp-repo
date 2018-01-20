@@ -10,26 +10,73 @@ namespace _04.Hornet_Armada
     {
         static void Main(string[] args)
         {
-            var a = new int[] { 1, 2, 3, 4,56 };
-            var b = new int[] { 1, 5, 56, 6,4 };
+            int lines = int.Parse(Console.ReadLine());
 
-            var c = 99;
+            Dictionary<string, int> activityDic = new Dictionary<string, int>();
+            Dictionary<string, Dictionary<string, long>> soldDic = new Dictionary<string, Dictionary<string, long>>();
+            PopulatingDics(lines, activityDic, soldDic);
 
-            int res = a.Intersect(b).Where(x=>x>1).Sum().CompareTo(c);
+            string lastLine = Console.ReadLine();
 
-            string[] check = new string[]
+            if (lastLine.Contains('\\'))
             {
-                "smaller than",
-                "equal to",
-                "bigger than"
-            };
+                ActivitySoldierResult(activityDic, soldDic, lastLine);
+            }
 
-            //foreach (var item in res)
-            //{
-            //Console.WriteLine(item);
-            //
-            //}
-            Console.WriteLine(check[res] + $" {c}");
+        }
+
+        private static void ActivitySoldierResult(Dictionary<string, int> activityDic, Dictionary<string, Dictionary<string, long>> soldDic, string lastLine)
+        {
+            var tokens = lastLine.Split('\\');
+            var activity = tokens[0];
+            var soldType = tokens[1];
+
+            foreach (var legion in soldDic.Where(legion=>legion.Value.ContainsKey(soldType)).OrderByDescending(x=>x.Value[soldType]))
+            {
+                //if (activityDic[legion.Key]<activity)
+                {
+
+                }
+                Console.WriteLine();
+            }
+
+
+        }
+
+        private static void PopulatingDics(int lines, Dictionary<string, int> activityDic, Dictionary<string, Dictionary<string, long>> soldDic)
+        {
+            for (int i = 0; i < lines; i++)
+            {
+                string[] tokens = Console.ReadLine().Split(new[] { '=', ' ', '-', '>', ':' }, StringSplitOptions.RemoveEmptyEntries);
+
+                int legActivity = int.Parse(tokens[0]);
+                string legName = tokens[1];
+                string legType = tokens[2];
+                long legCount = long.Parse(tokens[3]);
+
+                if (!activityDic.ContainsKey(legName))
+                {
+                    activityDic.Add(legName, legActivity);
+                }
+
+                else if (activityDic[legName] < legActivity)
+                {
+                    activityDic[legName] = legActivity;
+
+                }
+
+                if (!soldDic.ContainsKey(legName))
+                {
+                    soldDic.Add(legName, new Dictionary<string, long>());
+                    soldDic[legName].Add(legType, 0);
+                }
+                if (!soldDic[legName].ContainsKey(legType))
+                {
+                    soldDic[legName].Add(legType, 0);
+                }
+                soldDic[legName][legType] += legCount;
+
+            }
         }
     }
 }
