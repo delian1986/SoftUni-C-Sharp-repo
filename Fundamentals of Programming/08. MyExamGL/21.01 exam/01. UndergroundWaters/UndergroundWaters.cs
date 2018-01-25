@@ -36,92 +36,86 @@ namespace _01.UndergroundWaters
             rain = SubstractMaxCount(airLocalMax, rain);
 
             airMax = FindLocalMaxValue(airLocalMax, airMax);
-            rainMax= FindLocalMaxRainValue(rain, rainMax);
+            rainMax = FindLocalMaxRainValue(rain, rainMax);
+
+            if (airMax == rainMax)
+            {
+                Console.WriteLine("Something interesting was found!");
+                Console.WriteLine($"Sum: {airMax+rainMax}");
+            }
+            else
+            {
+                Console.WriteLine("There is nothing unordinary!");
+                Console.WriteLine($"Difference: {Math.Abs(rainMax-airMax)}");
+            }
         }
 
         private static int FindLocalMaxRainValue(List<int> rain, int rainMax)
         {
-            if (rain.Count == 1 || rain.Count == 0)
+            int temp = int.MinValue;
+
+            if (rain.Count == 1)
             {
-                rainMax = 0;
+                rainMax = rain[0];
             }
 
             else
             {
-                int temp = int.MinValue;
 
-                for (int i = 0; i < rain.Count - 1; i++)
+                for (int i = 0; i < rain.Count; i++)
                 {
 
-
-                    if (i == 0 && rain[i] > rain[i + 1])
+                    for (int j = 0; j < rain.Count; j++)
                     {
-                        temp = rain[i];
-
-
+                        if (i == j)
+                        {
+                            continue;
+                        }
+                        else if (rain[i] > rain[j])
+                        {
+                            temp = rain[i];
+                        }
+                        if (temp > rainMax)
+                        {
+                            rainMax = temp;
+                        }
                     }
-
-                    else if (i > 0 && rain[i] > rain[i - 1] && rain[i] > rain[i + 1])
-                    {
-                        temp = rain[i];
-                    }
-
-                    else if (rain[rain.Count - 1] > rain[rain.Count - 2])
-                    {
-                        temp = rain[rain.Count - 1];
-
-                    }
-                    if (rainMax < temp)
-                    {
-                        rainMax = temp;
-                    }
-
                 }
             }
-
             return rainMax;
         }
 
         private static int FindLocalMaxValue(List<int> airLocalMax, int airMax)
         {
-            if (airLocalMax.Count == 1 || airLocalMax.Count == 0)
+            if (airLocalMax.Count == 1)
             {
-                airMax = 0;
+                airMax = airLocalMax[0];
             }
-
             else
             {
                 int temp = int.MinValue;
 
-                for (int i = 0; i < airLocalMax.Count - 1; i++)
+                for (int i = 0; i < airLocalMax.Count; i++)
                 {
 
-
-                    if (i == 0 && airLocalMax[i] > airLocalMax[i + 1])
+                    for (int j = 0; j < airLocalMax.Count; j++)
                     {
-                        temp = airLocalMax[i];
-
-
-                    }
-
-                    else if (i > 0 && airLocalMax[i] > airLocalMax[i - 1] && airLocalMax[i] > airLocalMax[i + 1])
-                    {
-                        temp = airLocalMax[i];
-                    }
-
-                    else if (airLocalMax[airLocalMax.Count-1]>airLocalMax[airLocalMax.Count-2])
-                    {
-                        temp = airLocalMax[airLocalMax.Count-1];
-
-                    }
-                    if (airMax < temp)
-                    {
-                        airMax = temp;
+                        if (i == j)
+                        {
+                            continue;
+                        }
+                        else if (airLocalMax[i] > airLocalMax[j])
+                        {
+                            temp = airLocalMax[i];
+                        }
+                        if (temp > airMax)
+                        {
+                            airMax = temp;
+                        }
                     }
 
                 }
             }
-
             return airMax;
         }
 
