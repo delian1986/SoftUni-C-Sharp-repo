@@ -16,7 +16,7 @@ namespace _04.Trainlands
     {
         static void Main(string[] args)
         {
-            Dictionary<string, List<Train>> train = new Dictionary<string, List<Train>>();
+            Dictionary<string, Dictionary<string,int>> train = new Dictionary<string, Dictionary<string, int>>();
 
 
             string input;
@@ -27,49 +27,49 @@ namespace _04.Trainlands
                 {
                     string[] tokens = input.Split(new[] { '-', '>', ':' }, StringSplitOptions.RemoveEmptyEntries);
 
-                    if (tokens.Length==2)
+                    if (tokens.Length == 2)
                     {
-                        if (!train.ContainsKey(tokens[1]))
+                        var firstTrain = tokens[0];
+                        var otherTrain = tokens[1];
+                        if (!train.ContainsKey(tokens[0]))
                         {
-                            train.Add(tokens[1], new List<Train>());
-                            var sa = train.FirstOrDefault(x => x.Key == tokens[0]);
+
+                            train.Add(firstTrain, new Dictionary<string, int>());
+                            var otherTrainWagons = train[otherTrain];
+                            f
+                            train[firstTrain].Add(otherTrainWagons);
+                            train.Remove(otherTrain);
+                        }
+                        else
+                        {
+                            var otherTrainWagons = train[otherTrain];
+
+                        }
+
                     }
                     else
                     {
+                        train = populatingTrains(input, train, tokens);
 
-                        train = populatingTrains(input, train);
                     }
-
                 }
-                else if (input.Contains("="))
-                {
 
-                }
             }
+
 
         }
 
-        private static Dictionary<string, List<Train>> populatingTrains(string input, Dictionary<string, List<Train>> train)
+        private static Dictionary<string, Dictionary<string, int>> populatingTrains(string input, Dictionary<string, Dictionary<string, int>> train, string[] tokens)
         {
-
-
-            List<Train> trainList = new List<Train>();
             string trainName = tokens[0];
-
-            Train newTrain = new Train
-            {
-                WagonName = tokens[1],
-                WagonPower = int.Parse(tokens[2])
-            };
-
-            trainList.Add(newTrain);
-
+            string wagonName = tokens[1];
+            int wagonPower = int.Parse(tokens[2]);
 
             if (!train.ContainsKey(trainName))
             {
-                train.Add(trainName, new List<Train>());
+                train.Add(trainName, new Dictionary<string, int>());
             }
-            train[trainName].AddRange(trainList);
+            train[trainName].Add(wagonName,wagonPower);
 
 
             return train;
