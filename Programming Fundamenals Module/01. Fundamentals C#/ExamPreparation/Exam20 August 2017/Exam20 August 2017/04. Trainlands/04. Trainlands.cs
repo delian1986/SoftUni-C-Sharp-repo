@@ -23,35 +23,33 @@ namespace _04.Trainlands
 
             while ((input = Console.ReadLine()) != "It's Training Men!")
             {
-                if (input.Contains("->"))
+                if (!input.Contains("->")) continue;
+                string[] tokens = input.Split(new[] { '-', '>', ':' }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (tokens.Length == 2)
                 {
-                    string[] tokens = input.Split(new[] { '-', '>', ':' }, StringSplitOptions.RemoveEmptyEntries);
-
-                    if (tokens.Length == 2)
+                    var firstTrain = tokens[0];
+                    var otherTrain = tokens[1];
+                    if (!train.ContainsKey(tokens[0]))
                     {
-                        var firstTrain = tokens[0];
-                        var otherTrain = tokens[1];
-                        if (!train.ContainsKey(tokens[0]))
-                        {
 
-                            train.Add(firstTrain, new Dictionary<string, int>());
-                            var otherTrainWagons = train[otherTrain];
-                            f
-                            train[firstTrain].Add(otherTrainWagons);
-                            train.Remove(otherTrain);
-                        }
-                        else
-                        {
-                            var otherTrainWagons = train[otherTrain];
-
-                        }
-
+                        train.Add(firstTrain, new Dictionary<string, int>());
+                        var otherTrainWagons = train[otherTrain];
+                            
+                        train[firstTrain].Add(otherTrainWagons);
+                        train.Remove(otherTrain);
                     }
                     else
                     {
-                        train = populatingTrains(input, train, tokens);
+                        var otherTrainWagons = train[otherTrain];
 
                     }
+
+                }
+                else
+                {
+                    train = PopulatingTrains(input, train, tokens);
+
                 }
 
             }
@@ -59,7 +57,7 @@ namespace _04.Trainlands
 
         }
 
-        private static Dictionary<string, Dictionary<string, int>> populatingTrains(string input, Dictionary<string, Dictionary<string, int>> train, string[] tokens)
+        private static Dictionary<string, Dictionary<string, int>> PopulatingTrains(string input, Dictionary<string, Dictionary<string, int>> train, string[] tokens)
         {
             string trainName = tokens[0];
             string wagonName = tokens[1];

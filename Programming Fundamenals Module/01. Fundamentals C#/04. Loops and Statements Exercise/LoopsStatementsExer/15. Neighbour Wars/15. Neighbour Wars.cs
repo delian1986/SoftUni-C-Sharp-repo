@@ -15,22 +15,53 @@ namespace _15.Neighbour_Wars
 
             int peshoHP = 100;
             int goshoHP = 100;
-            int count = 0;
+            int roundOfTheGame = 0;
+            int restoreHpCount = 1;
 
-            while (peshoHP>=0||goshoHP>=0)
+
+            while (peshoHP >= 0 || goshoHP >= 0)
             {
-                goshoHP -= peshoDmg;
-                Console.WriteLine($"Pesho used Roundhouse kick and reduced Gosho to {goshoHP} health.");
-                count++;
+                roundOfTheGame++;
 
-                peshoHP -= goshoDmg;
-                Console.WriteLine($"Gosho used Thunderous fist and reduced Pesho to {goshoHP} health.");
-                count++;
-                
+                if (roundOfTheGame % 2 == 0)
+                {
+                    peshoHP -= goshoDmg;
+                    if (peshoHP<=0)
+                    {
+                        break;
+                    }
+                    Console.WriteLine($"Gosho used Thunderous fist and reduced Pesho to {peshoHP} health.");
+                }
+                else
+                {
+                    goshoHP -= peshoDmg;
+                    if (goshoHP<=0)
+                    {
+                        break;
+                    }
+                    Console.WriteLine($"Pesho used Roundhouse kick and reduced Gosho to {goshoHP} health.");
+                }
+                if (restoreHpCount == 3)
+                {
+                    goshoHP += 10;
+                    peshoHP += 10;
+                    restoreHpCount=0;
+                }
+                restoreHpCount++;
             }
-            int winner = Math.Max(goshoHP, peshoHP);
 
-            Console.WriteLine($"{count}");
+            string winner;
+            if (roundOfTheGame%2==0)
+            {
+                winner="Gosho";
+            }
+            else
+            {
+                winner="Pesho";
+            }
+
+            Console.WriteLine($"{winner} won in {roundOfTheGame}th round.");
         }
+
     }
 }
