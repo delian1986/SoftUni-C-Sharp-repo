@@ -1,4 +1,4 @@
-<!--Making the header in center + parafraf--->
+<!--Making the header in center + pargraf--->
 <h1 align="center">C # -SoftUni-repo</h1>
 <p align = "center">Keep calm and do your homework</p>
 
