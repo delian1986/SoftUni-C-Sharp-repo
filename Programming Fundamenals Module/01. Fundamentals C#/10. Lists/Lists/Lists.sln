@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Square Numbers", "06. Square Numbers\06. Square Numbers.csproj", "{8C264EBC-C557-4996-9855-76EC4E3B5F81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Count Numbers", "07. Count Numbers\07. Count Numbers.csproj", "{360DFC83-7F2E-46AB-8EDC-287595B52235}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C264EBC-C557-4996-9855-76EC4E3B5F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C264EBC-C557-4996-9855-76EC4E3B5F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C264EBC-C557-4996-9855-76EC4E3B5F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C264EBC-C557-4996-9855-76EC4E3B5F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{360DFC83-7F2E-46AB-8EDC-287595B52235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{360DFC83-7F2E-46AB-8EDC-287595B52235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{360DFC83-7F2E-46AB-8EDC-287595B52235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{360DFC83-7F2E-46AB-8EDC-287595B52235}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70E15987-01AA-40A1-B4B6-0843E2BBDEEB}
+	EndGlobalSection
+EndGlobal
