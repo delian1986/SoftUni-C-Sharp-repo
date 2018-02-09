@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace _01._Max_of_Equal_Elements
 {
-    class Program
+    class MaxSequenceOfEqualElements
     {
         static void Main(string[] args)
         {
@@ -12,12 +12,11 @@ namespace _01._Max_of_Equal_Elements
 
             var mostFrequent=nums.GroupBy(x=>x);
             
-
             foreach (var num in mostFrequent.OrderByDescending(x=>x.Count()))
             {
                 var element=num.Key;
-                var ocurr=num.Count();
-                Console.WriteLine(string.Concat(Enumerable.Repeat(element+" ",ocurr)));
+                var occur=num.Count();
+                Console.WriteLine(string.Concat(Enumerable.Repeat(element+" ",occur)));
                 break;
             }
         }
