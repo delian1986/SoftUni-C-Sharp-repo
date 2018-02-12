@@ -5,19 +5,33 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Rabbit Hole", "01. Rabbit Hole\01. Rabbit Hole.csproj", "{AC677F9F-AC35-4B3E-B630-EC2073BCFC06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Array Contains Element", "02. Array Contains Element\02. Array Contains Element.csproj", "{111DC724-C6BC-4A12-9D30-608C7F4611F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Array Contains Element", "02. Array Contains Element\01. Array Contains Element.csproj", "{111DC724-C6BC-4A12-9D30-608C7F4611F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Smallest Element in Array", "02. Smallest Element in Array\02. Smallest Element in Array.csproj", "{40A3477E-BC6C-4A39-BF3C-BD55DF54BFF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Smallest Element in Array", "02. Smallest Element in Array\02. Smallest Element in Array.csproj", "{40A3477E-BC6C-4A39-BF3C-BD55DF54BFF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Reverse Array In-place", "03. Reverse Array In-place\03. Reverse Array In-place.csproj", "{0A323BE1-5129-4EDE-A135-7735DEFBFC4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Reverse Array In-place", "03. Reverse Array In-place\03. Reverse Array In-place.csproj", "{0A323BE1-5129-4EDE-A135-7735DEFBFC4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Sort Array Bubble Sort", "04. Sort Array Bubble Sort\04. Sort Array Bubble Sort.csproj", "{3CD67397-CE90-428E-8034-FEFE4DFD2D95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Sort Array Bubble Sort", "04. Sort Array Bubble Sort\04. Sort Array Bubble Sort.csproj", "{3CD67397-CE90-428E-8034-FEFE4DFD2D95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Sort Array Insertion Sort", "05. Sort Array nsertion Sort\05. Sort Array Insertion Sort.csproj", "{F64E0D03-2990-41B4-B16C-3ADFE8FBE360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Sort Array Insertion Sort", "05. Sort Array nsertion Sort\05. Sort Array Insertion Sort.csproj", "{F64E0D03-2990-41B4-B16C-3ADFE8FBE360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Insertion Sort List", "06. Insertion Sort List\06. Insertion Sort List.csproj", "{9A34EF73-6655-45A3-A657-94D3831206D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Insertion Sort List", "06. Insertion Sort List\06. Insertion Sort List.csproj", "{9A34EF73-6655-45A3-A657-94D3831206D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Largest N Elements", "07. Largest N Elements\07. Largest N Elements.csproj", "{C14E871B-CC43-484F-92F7-4EE079AD0853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Largest N Elements", "07. Largest N Elements\07. Largest N Elements.csproj", "{C14E871B-CC43-484F-92F7-4EE079AD0853}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Array and List Algorithms - Exercises", "Array and List Algorithms - Exercises", "{3DD39F2C-9EB5-42A4-B85A-4F408110E470}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Shoot List Elements", "01. Shoot List Elements\01. Shoot List Elements.csproj", "{C384D33D-E53E-4481-9AB6-EBEE40665473}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArrayAndListsMoreProblems", "ArrayAndListsMoreProblems", "{9CCCAD89-DADC-4AD8-9806-AC019AAF56AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArrayAndListsLab", "ArrayAndListsLab", "{22375CEE-363C-4166-AE45-FDA3B272D774}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Average Character Delimiter", "02. Average Character Delimiter\02. Average Character Delimiter.csproj", "{5D1EBB68-0269-4C66-95C6-90F4E39304F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Sort Array of Strings", "03. Sort Array of Strings\03. Sort Array of Strings.csproj", "{421F8E02-20D1-4598-A1F2-67C050EB84A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Array Histogram", "04. Array Histogram\04. Array Histogram.csproj", "{3DCA4FCC-7BB4-4ECE-ACA0-D96327BF8207}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,9 +71,39 @@ Global
 		{C14E871B-CC43-484F-92F7-4EE079AD0853}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C14E871B-CC43-484F-92F7-4EE079AD0853}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C14E871B-CC43-484F-92F7-4EE079AD0853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C384D33D-E53E-4481-9AB6-EBEE40665473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C384D33D-E53E-4481-9AB6-EBEE40665473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C384D33D-E53E-4481-9AB6-EBEE40665473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C384D33D-E53E-4481-9AB6-EBEE40665473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1EBB68-0269-4C66-95C6-90F4E39304F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1EBB68-0269-4C66-95C6-90F4E39304F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1EBB68-0269-4C66-95C6-90F4E39304F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1EBB68-0269-4C66-95C6-90F4E39304F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{421F8E02-20D1-4598-A1F2-67C050EB84A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{421F8E02-20D1-4598-A1F2-67C050EB84A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{421F8E02-20D1-4598-A1F2-67C050EB84A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{421F8E02-20D1-4598-A1F2-67C050EB84A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DCA4FCC-7BB4-4ECE-ACA0-D96327BF8207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCA4FCC-7BB4-4ECE-ACA0-D96327BF8207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DCA4FCC-7BB4-4ECE-ACA0-D96327BF8207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCA4FCC-7BB4-4ECE-ACA0-D96327BF8207}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC677F9F-AC35-4B3E-B630-EC2073BCFC06} = {9CCCAD89-DADC-4AD8-9806-AC019AAF56AE}
+		{111DC724-C6BC-4A12-9D30-608C7F4611F9} = {22375CEE-363C-4166-AE45-FDA3B272D774}
+		{40A3477E-BC6C-4A39-BF3C-BD55DF54BFF7} = {22375CEE-363C-4166-AE45-FDA3B272D774}
+		{0A323BE1-5129-4EDE-A135-7735DEFBFC4A} = {22375CEE-363C-4166-AE45-FDA3B272D774}
+		{3CD67397-CE90-428E-8034-FEFE4DFD2D95} = {22375CEE-363C-4166-AE45-FDA3B272D774}
+		{F64E0D03-2990-41B4-B16C-3ADFE8FBE360} = {22375CEE-363C-4166-AE45-FDA3B272D774}
+		{9A34EF73-6655-45A3-A657-94D3831206D7} = {22375CEE-363C-4166-AE45-FDA3B272D774}
+		{C14E871B-CC43-484F-92F7-4EE079AD0853} = {22375CEE-363C-4166-AE45-FDA3B272D774}
+		{C384D33D-E53E-4481-9AB6-EBEE40665473} = {3DD39F2C-9EB5-42A4-B85A-4F408110E470}
+		{5D1EBB68-0269-4C66-95C6-90F4E39304F4} = {3DD39F2C-9EB5-42A4-B85A-4F408110E470}
+		{421F8E02-20D1-4598-A1F2-67C050EB84A5} = {3DD39F2C-9EB5-42A4-B85A-4F408110E470}
+		{3DCA4FCC-7BB4-4ECE-ACA0-D96327BF8207} = {3DD39F2C-9EB5-42A4-B85A-4F408110E470}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A4F97AA3-6E2D-4C17-8A01-705FA9740816}
