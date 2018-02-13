@@ -30,9 +30,9 @@ namespace _04._Array_Histogram
                 }
             }
 
-            foreach (var word in dict)
+            foreach (var word in dict.OrderByDescending(x=>x.Value.Keys.First()))
             {
-                foreach (var num in word.Value.OrderByDescending(x=>x.Key))
+                foreach (var num in word.Value)
                 {
                     Console.WriteLine($"{word.Key} -> {num.Key} times ({num.Value:f2}%)");
                 }
