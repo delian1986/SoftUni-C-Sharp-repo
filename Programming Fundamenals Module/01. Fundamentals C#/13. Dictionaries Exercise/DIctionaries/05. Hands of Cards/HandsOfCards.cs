@@ -14,9 +14,10 @@ namespace _05._Hands_of_Cards
 
             while ((inputLine = Console.ReadLine()) != "JOKER")
             {
-                string[] args = inputLine.Split(new[] { ':'}, StringSplitOptions.RemoveEmptyEntries).ToArray();
+                string[] args = inputLine.Split(new[] {':'}, StringSplitOptions.RemoveEmptyEntries).ToArray();
 
                 string player = args[0];
+
                 string[]hands=args[1].Split(new char[]{',',' ' },StringSplitOptions.RemoveEmptyEntries);
 
                 if (!playerHands.ContainsKey(player))
