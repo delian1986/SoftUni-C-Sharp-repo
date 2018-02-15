@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+/// <summary>
+/// This is a program witch calculate the points in card game. Note that every player should have only unique cards.
+/// https://judge.softuni.bg/Contests/Compete/Index/209#4
+/// </summary>
 
 namespace _05._Hands_of_Cards
 {
@@ -9,15 +13,18 @@ namespace _05._Hands_of_Cards
         static void Main()
         {
             string inputLine = String.Empty;
-
+            //The main structure where the program stores the players and their cards. It uses HashSet because the cards should be unique for each player.
             Dictionary<string, HashSet<string>> playerHands = new Dictionary<string, HashSet<string>>();
+
 
             while ((inputLine = Console.ReadLine()) != "JOKER")
             {
                 string[] args = inputLine.Split(new[] {':'}, StringSplitOptions.RemoveEmptyEntries).ToArray();
 
+                //Player Name
                 string player = args[0];
 
+                //Player cards.
                 string[]hands=args[1].Split(new char[]{',',' ' },StringSplitOptions.RemoveEmptyEntries);
 
                 if (!playerHands.ContainsKey(player))
@@ -31,12 +38,17 @@ namespace _05._Hands_of_Cards
                 }
             }
 
+            //Here the program calculate the score from the cards
             foreach (var player in playerHands)
             {
+                //Total sum.
                 int sum = 0;
+
+                //Card power.
                 int card = 0;
                 foreach (var hand in player.Value)
                 {
+                    //Here the program split hand to elements. ex. 2D -> 2 and D.
                     char[] tokens = hand.ToCharArray();
                     char power = tokens[0];
                     char type = tokens.Last();
