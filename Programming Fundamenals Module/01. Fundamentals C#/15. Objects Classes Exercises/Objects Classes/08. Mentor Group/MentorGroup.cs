@@ -4,7 +4,8 @@ using System.Linq;
 using System.Globalization;
 
 /// <summary>
-/// This program collect information about students. Their names, attend dates and comments. It keeps them in list of class Students. At the end the program prints report in console. 
+/// This program collect information about students. Their names, attend dates and comments. 
+/// It keeps them in list of class Students. At the end the program prints report in console. 
 /// https://judge.softuni.bg/Contests/Compete/Index/210#7
 /// 90/100 so far....
 /// </summary>
@@ -13,13 +14,13 @@ namespace _08._Mentor_Group
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            //This is the main list where the program keeps the Students info.
+            //This is the main list where the program store the Students info.
             List<Student> classRoom = new List<Student>();
             string studentActivities = string.Empty;
 
-            //Attend dates.
+            //Attend dates section.
             while ((studentActivities = Console.ReadLine()) != "end of dates")
             {
                 string[] tokents = studentActivities.Split(new char[] { ' ', ',' });
@@ -51,7 +52,7 @@ namespace _08._Mentor_Group
                 }
             }
 
-            //Comments.
+            //Comments section.
             while ((studentActivities = Console.ReadLine()) != "end of comments")
             {
                 string[] tokents = studentActivities.Split(new char[] { '-' });
