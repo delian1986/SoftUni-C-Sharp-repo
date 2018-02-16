@@ -3,7 +3,7 @@
 <p align = "center">Keep calm and do your homework</p>
 
 <!--Adding Content-->
-<h1> My journey through SoftUni and C#</h1>
+<h1 align="center"> My journey through SoftUni and C#</h1>
 
 <!--C# Basics course exercises-->
 <h3><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics"><b>Programming Basics Course Solutions</b></a></h3>
