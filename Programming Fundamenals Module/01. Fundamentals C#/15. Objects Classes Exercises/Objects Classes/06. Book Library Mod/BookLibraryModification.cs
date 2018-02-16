@@ -4,7 +4,7 @@ using System.Linq;
 using System.Globalization;
 
 /// <summary>
-/// Program witch read books from console, collecting them in Library and print them ordered.
+/// Program witch read books from console, collecting them in Library CLass and print them ordered.
 /// https://judge.softuni.bg/Contests/Compete/Index/210#4
 /// </summary>
 namespace _06._Book_Library_Mod
