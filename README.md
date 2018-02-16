@@ -1,6 +1,6 @@
 <!--Making the header in center + pargraf--->
 <h1 align="center">C # -SoftUni-repo</h1>
-<p align = "center">Keep calm and do your homework</p>
+<p align = "center"><strong>Keep calm and do your homework</strong></p>
 </br>
 
 <!--Adding Content-->
@@ -13,5 +13,8 @@
 <!--Open Course Fundamentals of Programming with C# November 2017-->
 <h3> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Fundamentals%20of%20Programming"><b>Open Course Fundamentals of Programming with C# November 2017</b></a></h3>
 </br>
+
 <!-- Module Fundamentals Of Programming January 2018-->
-<h3> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20Module/01.%20Fundamentals%20C%23"><b>Fundamentals of Programming Modume January 2018</b></a></h3>
+<h3> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20Module/01.%20Fundamentals%20C%23"><b>Fundamentals of Programming Module January 2018</b></a></h3>
+</br>
+
