@@ -7,5 +7,6 @@
 
 <!--C# Basics course exercises-->
 <h3><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics"><b>Programming Basics Course Solutions</b></a></h3>
+</br>
 
-<h3> <a href=""><b>Open Course Fundamentals of Programming with C# November 2017</b></a></h3>
+<h3> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Fundamentals%20of%20Programming"><b>Open Course Fundamentals of Programming with C# November 2017</b></a></h3>
