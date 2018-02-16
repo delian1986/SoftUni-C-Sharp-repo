@@ -1,5 +1,5 @@
 <!--C# Basics course exercises-->
-<h3><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics"><b>Programming Basics Course Solutions</b></a></h3>
+<h3 style="text-align:center"><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics"><b>Programming Basics Course Solutions</b></a></h3>
 
 <!--Lectures Links-->
 <ol>
