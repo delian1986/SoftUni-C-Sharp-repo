@@ -23,15 +23,17 @@ namespace _08._Mentor_Group
             //Attend dates section.
             while ((studentActivities = Console.ReadLine()) != "end of dates")
             {
-                string[] tokents = studentActivities.Split(new char[] { ' ', ',' });
-
-               
-                string studentName = tokents[0];
+                string[] tokens = studentActivities.Split();
+                string studentName = tokens[0];
                 List<DateTime> datesAtended = new List<DateTime>();
 
-                for (int i = 1; i < tokents.Length; i++)
+                if (tokens.Length > 1)
                 {
-                    datesAtended.Add(DateTime.ParseExact(tokents[i], "dd/MM/yyyy", CultureInfo.InvariantCulture));
+                    string[] dates=tokens[1].Split(',');
+                    for (int i = 0; i < dates.Length; i++)
+                    {
+                        datesAtended.Add(DateTime.ParseExact(dates[i], "dd/MM/yyyy", CultureInfo.InvariantCulture));
+                    }
                 }
 
                 if (classRoom.Any(x => x.Name == studentName))
@@ -41,7 +43,6 @@ namespace _08._Mentor_Group
                 }
                 else
                 {
-
                     Student newStudent = new Student
                     {
                         Name = studentName,
@@ -80,7 +81,7 @@ namespace _08._Mentor_Group
                 foreach (var comment in student.Comments)
                 {
 
-                    Console.WriteLine($"- {string.Join("", comment)}");
+                    Console.WriteLine($"- {comment}");
                 }
                 Console.WriteLine("Dates attended:");
                 foreach (var date in student.Dates.OrderBy(x => x))

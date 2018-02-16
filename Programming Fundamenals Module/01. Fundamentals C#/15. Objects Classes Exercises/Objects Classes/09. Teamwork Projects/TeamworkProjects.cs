@@ -3,98 +3,92 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
+/// <summary>
+/// 87/100
+/// https://judge.softuni.bg/Contests/Compete/Index/210#8
+/// </summary>
+
 public class MentorGroup
 {
     public static void Main()
     {
-        string input = Console.ReadLine();
-        SortedDictionary<string, Student> students = 
-            new SortedDictionary<string, Student>();
+        List<Team> teams = new List<Team>();
 
-        while (input != "end of dates")
+        int linesOfAsigment = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < linesOfAsigment; i++)
         {
-            string[] studentInfo = input.Split(' ');
-            string name = studentInfo[0];
-            List<DateTime> dates = new List<DateTime>();
+            string[] teamRegister = Console.ReadLine().Split(new char[] { '-' }, StringSplitOptions.RemoveEmptyEntries);
+            string teamLeader = teamRegister[0];
+            string desiredName = teamRegister[1];
 
-            if (studentInfo.Length > 1)
+            if (teams.Any(x => x.TeamName == desiredName))
             {
-                string[] dateSeq = studentInfo[1].Split(',');
-
-                for (int i = 0; i < dateSeq.Length; i++)
-                {
-                    DateTime currDate = DateTime.ParseExact(dateSeq[i], "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                    dates.Add(currDate);
-                }
+                Console.WriteLine($"Team {desiredName} was already created!");
             }
-            
-            Student student = new Student();
-            student.Name = name;
-
-            if (!students.ContainsKey(name))
+            else if (teams.Any(x => x.Creator == teamLeader))
             {
-                students.Add(name, student);
-                student.Attendency = dates;
+                Console.WriteLine($"{teamLeader} cannot create another team");
             }
             else
             {
-                students[name].Attendency.AddRange(dates);
+                Team newTeam = new Team
+                {
+                    TeamName = desiredName,
+                    Creator = teamLeader,
+                    TeamMembers = new List<string>()
+                };
+                teams.Add(newTeam);
+                Console.WriteLine($"Team {desiredName} has been created by {teamLeader}!");
             }
+        }//End of team creation.
 
-            input = Console.ReadLine();
-        }
-
-        string secondInput = Console.ReadLine();
-
-        while (secondInput != "end of comments")
+        //Populating teams.
+        string assigment = string.Empty;
+        while ((assigment = Console.ReadLine()) != "end of assignment")
         {
-            string[] commentsInfo = secondInput.Split('-');
-            string name = commentsInfo[0];
-            string comment = commentsInfo[1];
-            List<string> comments = new List<string>();
-            comments.Add(comment);
+            string[] teamPopulate = assigment.Split(new char[] { '-', '>' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
+            string member = teamPopulate[0];
+            string desiredTeam = teamPopulate[1];
 
-            if (students.ContainsKey(name))
+            if (!teams.Any(x => x.TeamName == desiredTeam))
             {
-                if (students[name].Comments != null)
-                {
-                    students[name].Comments.AddRange(comments);
-                }
-                else
-                {
-                    students[name].Comments = comments;
-                }             
+                Console.WriteLine($"Team {desiredTeam} does not exist!");
             }
-
-            secondInput = Console.ReadLine();
-        }
-
-        foreach (var entry in students)
-        {   
-            Console.WriteLine("{0}", entry.Key); 
-            Console.WriteLine("Comments:");
-
-            if (entry.Value.Comments != null)
+            else if (teams.Any(x => x.Creator == member)||teams.Any(x=>x.TeamMembers.Contains(member)))
             {
-                foreach (var comment in entry.Value.Comments)
-                {
-                    Console.WriteLine("- {0}", comment);
-                }
+                Console.WriteLine($"Member {member} cannot join team {desiredTeam}!");
             }
-
-            Console.WriteLine("Dates attended:");
-
-            foreach (var date in entry.Value.Attendency.OrderBy(d => d))
+            else if (teams.Any(x => x.TeamName == desiredTeam))
             {
-                Console.WriteLine("-- {0:dd/MM/yyyy}", date);
+                var currTeam = teams.First(x => x.TeamName == desiredTeam);
+                currTeam.TeamMembers.Add(member);
+            }
+        }//End of team populating
+
+        foreach (var team in teams.Where(x => x.TeamMembers.Count > 0)
+            .OrderByDescending(x => x.TeamMembers.Count).ThenBy(x=>x.TeamName))
+        {
+            Console.WriteLine($"{team.TeamName}");
+            Console.WriteLine($"- {team.Creator}");
+            foreach (var members in team.TeamMembers.OrderBy(x => x))
+            {
+                Console.WriteLine($"-- {members}");
             }
         }
+
+        Console.WriteLine($"Teams to disband:");
+        foreach (var teamToDisband in teams.Where(x => x.TeamMembers.Count == 0).OrderBy(x=>x.TeamName))
+        {
+            Console.WriteLine($"{teamToDisband.TeamName}");
+        }
+
     }
 }
 
-public class Student
+class Team
 {
-    public string Name { get; set; }
-    public List<DateTime> Attendency { get; set; }
-    public List<string> Comments { get; set; }
+    public string Creator { get; set; }
+    public string TeamName { get; set; }
+    public List<string> TeamMembers { get; set; }
 }
