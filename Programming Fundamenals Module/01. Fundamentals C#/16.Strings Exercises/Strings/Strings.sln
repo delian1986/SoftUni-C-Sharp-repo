@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Sum big numbers", "06. Sum big numbers\06. Sum big numbers.csproj", "{3D0CFF88-C16E-4269-8481-B8796CABC6E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LettersChangeNumbers", "LettersChangeNumbers\LettersChangeNumbers.csproj", "{8BA4562B-0BA0-4878-BE8B-ED1CD9464462}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D0CFF88-C16E-4269-8481-B8796CABC6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0CFF88-C16E-4269-8481-B8796CABC6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0CFF88-C16E-4269-8481-B8796CABC6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0CFF88-C16E-4269-8481-B8796CABC6E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA4562B-0BA0-4878-BE8B-ED1CD9464462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA4562B-0BA0-4878-BE8B-ED1CD9464462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA4562B-0BA0-4878-BE8B-ED1CD9464462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA4562B-0BA0-4878-BE8B-ED1CD9464462}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65612E8E-E0CD-40F4-89B4-6F7E135BA5AF}
+	EndGlobalSection
+EndGlobal
