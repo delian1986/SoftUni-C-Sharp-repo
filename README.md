@@ -15,6 +15,6 @@
 </br>
 
 <!-- Module Fundamentals Of Programming January 2018-->
-<h3> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018"><b>Fundamentals of Programming Module January 2018</b></a></h3>
+<h3> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018"><b>Fundamentals of Programming Tech Module January 2018</b></a></h3>
 </br>
 
