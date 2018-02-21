@@ -13,4 +13,6 @@
    <li> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018/07.Dictionaries%2C%20Lambda%20Expressions%20and%20LINQ">Dictionaries, Lambda Expressions and LINQ</a></li>
    <li> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018/08.%20Objects%20Classes%20Exercises">Objects and Classes</a></li>
    <li> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018/09.StringAndTextProceeding">Strings and Text Processing</a></li>
+  <li> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018/10.%20Regex">Regular Expressions</a></li>
 </ol>
+
