@@ -1,18 +1,18 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 
 /// <summary>
-/// This program count occurencies in sequence of digits and write the 
-/// most frequent numbers to onother file.
+/// This program count max number of equals.
 /// </summary>
 
-namespace _01._Most_Frequent_Number
+namespace _04._Max_Sequence_of_Equal_Elements
 {
-    class MostFrequentNumber
+    class MaxSequenceOfEqualElements
     {
         static void Main()
         {
-            string[] nums = File.ReadAllLines("input.txt");
+              string[] nums = File.ReadAllLines("input.txt");
 
             for (int i = 0; i < nums.Length; i++)
             {
@@ -20,11 +20,11 @@ namespace _01._Most_Frequent_Number
                 int maxCount = 0;
                 var line = nums[i].Split();
 
-                for (int j = 0; j < line.Length; j++)
+                for (int j = 0; j < line.Length-1; j++)
                 {
                     string currNum = string.Empty;
                     int currCount = 1;
-                    for (int k = j + 1; k < line.Length - 1; k++)
+                    for (int k = j + 1; k < line.Length; k++)
                     {
                         if (line[j] == line[k])
                         {
@@ -39,7 +39,7 @@ namespace _01._Most_Frequent_Number
                         }
                     }
                 }
-                File.AppendAllText("Output.txt", maxNum + Environment.NewLine);
+                File.AppendAllText("Output.txt", string.Concat(Enumerable.Repeat(maxNum+" ",maxCount)) + Environment.NewLine);
             }
         }
     }
