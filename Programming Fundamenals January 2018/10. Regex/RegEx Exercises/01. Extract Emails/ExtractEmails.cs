@@ -13,6 +13,8 @@ namespace _01._Extract_Emails
         static void Main()
         {
             string text=Console.ReadLine();
+
+            //Validating email.
             string pattern=@"(?<=\s)([a-z]+|[\d]+)(\.|\-)?\w+@([a-z]+|[\d]+)(\.|\-)?(\.+)?([a-z]+)(\.+)?([a-z]+)\.([a-z]+)";
 
             foreach (Match mail in Regex.Matches(text,pattern))
