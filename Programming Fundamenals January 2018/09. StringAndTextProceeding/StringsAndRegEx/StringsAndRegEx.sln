@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Censorship", "01. Censorship\01. Censorship.csproj", "{60CEDE97-981F-4A87-8B90-40DBA69FFA28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Censorship", "01. Censorship\01. Censorship.csproj", "{60CEDE97-981F-4A87-8B90-40DBA69FFA28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Email me", "02. Email me\02. Email me.csproj", "{DB79DA9F-F0F3-4A06-9432-54D3763F997A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Email me", "02. Email me\02. Email me.csproj", "{DB79DA9F-F0F3-4A06-9432-54D3763F997A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Karate Strings", "03. Karate Strings\03. Karate Strings.csproj", "{C6047497-6A66-44D6-8BEB-DA1FF0923744}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Karate Strings", "03. Karate Strings\03. Karate Strings.csproj", "{C6047497-6A66-44D6-8BEB-DA1FF0923744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Morse Code Upgraded", "04. Morse Code Upgraded\04. Morse Code Upgraded.csproj", "{28793319-C4EF-4AC1-B836-FF691910EE22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Morse Code Upgraded", "04. Morse Code Upgraded\04. Morse Code Upgraded.csproj", "{28793319-C4EF-4AC1-B836-FF691910EE22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Only Letters", "05. Only Letters\05. Only Letters.csproj", "{6FA4787A-E19C-4469-85A1-442766BBE1A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{28793319-C4EF-4AC1-B836-FF691910EE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28793319-C4EF-4AC1-B836-FF691910EE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28793319-C4EF-4AC1-B836-FF691910EE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA4787A-E19C-4469-85A1-442766BBE1A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA4787A-E19C-4469-85A1-442766BBE1A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA4787A-E19C-4469-85A1-442766BBE1A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA4787A-E19C-4469-85A1-442766BBE1A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
