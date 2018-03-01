@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Trainegram", "03. Trainegram\03. Trainegram.csproj", "{CAD35DAC-FD7E-4028-A9B7-FF3AB59D1660}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Trainlands", "04. Trainlands\04. Trainlands.csproj", "{4F8058B9-F500-4364-9D20-77E1B6126B9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAD35DAC-FD7E-4028-A9B7-FF3AB59D1660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD35DAC-FD7E-4028-A9B7-FF3AB59D1660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD35DAC-FD7E-4028-A9B7-FF3AB59D1660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD35DAC-FD7E-4028-A9B7-FF3AB59D1660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F8058B9-F500-4364-9D20-77E1B6126B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F8058B9-F500-4364-9D20-77E1B6126B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F8058B9-F500-4364-9D20-77E1B6126B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F8058B9-F500-4364-9D20-77E1B6126B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAD6E94D-D260-4053-97AE-356A07244251}
+	EndGlobalSection
+EndGlobal
