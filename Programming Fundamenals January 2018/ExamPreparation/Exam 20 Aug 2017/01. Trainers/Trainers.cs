@@ -35,9 +35,7 @@ namespace _01._Trainers
                 decimal result = cargoIncome - fuelPrice;
 
                 bestTrainers[teamName] += result;
-
             }
-
             
             var best=bestTrainers.OrderByDescending(x=>x.Value).First();
 
