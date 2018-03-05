@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Karate Strings", "03. K
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Morse Code Upgraded", "04. Morse Code Upgraded\04. Morse Code Upgraded.csproj", "{28793319-C4EF-4AC1-B836-FF691910EE22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Only Letters", "05. Only Letters\05. Only Letters.csproj", "{6FA4787A-E19C-4469-85A1-442766BBE1A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Only Letters", "05. Only Letters\05. Only Letters.csproj", "{6FA4787A-E19C-4469-85A1-442766BBE1A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Email Statistics", "06. Email Statistics\06. Email Statistics.csproj", "{8BB0B1F1-99CA-4615-B787-03EEA40B904F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Hideout", "07. Hideout\07. Hideout.csproj", "{6FD6D317-AAFA-4BBA-9984-CB1179891F9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Mines", "08. Mines\08. Mines.csproj", "{9E6124A8-6513-47C0-9E8B-500B558E392A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{6FA4787A-E19C-4469-85A1-442766BBE1A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FA4787A-E19C-4469-85A1-442766BBE1A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FA4787A-E19C-4469-85A1-442766BBE1A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB0B1F1-99CA-4615-B787-03EEA40B904F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB0B1F1-99CA-4615-B787-03EEA40B904F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB0B1F1-99CA-4615-B787-03EEA40B904F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB0B1F1-99CA-4615-B787-03EEA40B904F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FD6D317-AAFA-4BBA-9984-CB1179891F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FD6D317-AAFA-4BBA-9984-CB1179891F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FD6D317-AAFA-4BBA-9984-CB1179891F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FD6D317-AAFA-4BBA-9984-CB1179891F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E6124A8-6513-47C0-9E8B-500B558E392A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E6124A8-6513-47C0-9E8B-500B558E392A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E6124A8-6513-47C0-9E8B-500B558E392A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E6124A8-6513-47C0-9E8B-500B558E392A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
