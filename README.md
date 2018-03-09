@@ -20,6 +20,6 @@
 
 |    Course    |    Certificate                                    | 
 |-------------|----------------------------------------------|
-|    <h1><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics"><b>Programming Basics Course Solutions</b></a></h1>       |  <h1><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics"><b>Link</b></a></h1>   |
+|    <p><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics"><b>Programming Basics Course Solutions</b></a><p>       |  <p><a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Basics"><b>Link</b></a></p>   |
 |    -1       |    -1   0 -1 1 1 1 2 …                       |
 |    1000     |    1000   1001 2001 1002 1002 2003 1003 …    | 
