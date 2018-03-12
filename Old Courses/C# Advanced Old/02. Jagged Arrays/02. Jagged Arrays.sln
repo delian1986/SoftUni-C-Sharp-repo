@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Sum Matrix Elements", "1. Sum Matrix Elements\01. Sum Matrix Elements.csproj", "{13E53F43-0846-40E6-AF1D-D83876A49A32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Sum Matrix Elements", "1. Sum Matrix Elements\1. Sum Matrix Elements.csproj", "{13E53F43-0846-40E6-AF1D-D83876A49A32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Square With Maximum Sum", "2. Square With Maximum Sum\2. Square With Maximum Sum.csproj", "{7AF02F7E-2F36-4DDE-8336-BE6BB04EB76E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Group Numbers", "3. Group Numbers\3. Group Numbers.csproj", "{56768F6A-02A3-427A-94FB-2174805900B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Pascal Triangle", "4. Pascal Triangle\4. Pascal Triangle.csproj", "{3130F6A6-727D-4E90-AEEE-992ED46FB1CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{7AF02F7E-2F36-4DDE-8336-BE6BB04EB76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AF02F7E-2F36-4DDE-8336-BE6BB04EB76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AF02F7E-2F36-4DDE-8336-BE6BB04EB76E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56768F6A-02A3-427A-94FB-2174805900B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56768F6A-02A3-427A-94FB-2174805900B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56768F6A-02A3-427A-94FB-2174805900B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56768F6A-02A3-427A-94FB-2174805900B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3130F6A6-727D-4E90-AEEE-992ED46FB1CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3130F6A6-727D-4E90-AEEE-992ED46FB1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3130F6A6-727D-4E90-AEEE-992ED46FB1CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3130F6A6-727D-4E90-AEEE-992ED46FB1CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
