@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 
 /// <summary>
-/// 70/100
+/// 100/100
 /// </summary>
 
 namespace _03
@@ -38,7 +38,7 @@ namespace _03
                 
                 string decodedMessage = decripting.ToString();
 
-                string starMessagePattern = @"(@[A-Za-z]+).*(:\d+)(![AD]!).*(->\d+)";
+                string starMessagePattern = @"@([a-zA-Z]+)[^@\-!:]*:(\d+)[^@\-!:]*!([AD])![^@\-!:]*->(\d+)";
 
                 var starMatch = Regex.Matches(decodedMessage, starMessagePattern);
 
@@ -50,24 +50,25 @@ namespace _03
                     string soldierCount = line.Groups[4].Value;
 
                     //Populating dictionaries.
-                    if (command == "!A!")
+                    if (command == "A")
                     {
                         if (!attackedPlanets.ContainsKey("Attacked planets"))
                         {
                             attackedPlanets.Add("Attacked planets", new List<string>());
                         }
-                        attackedPlanets["Attacked planets"].Add(planet.Trim('@'));
+                        attackedPlanets["Attacked planets"].Add(planet);
                     }
-                    else if (command == "!D!")
+                    else if (command == "D")
                     {
                         if (!destroyedPlanets.ContainsKey("Destroyed planets"))
                         {
                             destroyedPlanets.Add("Destroyed planets", new List<string>());
                         }
-                        destroyedPlanets["Destroyed planets"].Add(planet.Trim('@'));
+                        destroyedPlanets["Destroyed planets"].Add(planet);
                     }
                 }
 
+            }
                 //Message for attacked planes.
                 if (attackedPlanets.Count == 0)
                 {
@@ -78,9 +79,9 @@ namespace _03
                     foreach (var atkPlanet in attackedPlanets)
                     {
                         Console.WriteLine($@"Attacked planets: {atkPlanet.Value.Count}");
-                        foreach (var palanet in atkPlanet.Value.Distinct().OrderBy(x => x))
+                        foreach (var planet in atkPlanet.Value.Distinct().OrderBy(x => x))
                         {
-                            Console.WriteLine($"-> {palanet}");
+                            Console.WriteLine($"-> {planet}");
                         }
                     }
                 }
@@ -101,7 +102,6 @@ namespace _03
                         }
                     }
                 }
-            }
         }
     }
 }
