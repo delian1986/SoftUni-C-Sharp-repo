@@ -14,5 +14,7 @@
    <li> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018/08.%20Objects%20Classes%20Exercises">Objects and Classes</a></li>
    <li> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018/09.%20StringAndTextProceeding">Strings and Text Processing</a></li>
   <li> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018/10.%20Regex">Regular Expressions</a></li>
+    <li> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018/11.%20Files%20And%20Exeptions">Files And Exeptions</a></li>
+     <li> <a href="https://github.com/delian1986/SoftUni-C-Sharp-repo/tree/master/Programming%20Fundamenals%20January%202018/ExamPreparation">Exam Preparation</a></li>
 </ol>
 
