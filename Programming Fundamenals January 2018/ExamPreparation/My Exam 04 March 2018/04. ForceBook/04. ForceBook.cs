@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 
 /// <summary>
-/// 60/100
+/// 100/100
+/// https://judge.softuni.bg/Contests/Practice/Index/962#1
 /// </summary>
 
 namespace _04
 {
-    class Paduan
-    {
-        public string Name { get; set; }
-        public string Side { get; set; }
-    }
 
     class Program
     {
@@ -30,61 +26,78 @@ namespace _04
 
                     string forceSide = args[0];
                     string user = args[1];
-                    Paduan curr = new Paduan();
-                    curr.Name = user;
-                    curr.Side = forceSide;
 
-                    if (!sides.ContainsKey(forceSide))
+                    //If current user exist in database.
+                    bool userExist = false;
+                    //skip him.
+                    if (sides.Values.Any(x => x.Contains(user)))
                     {
-                        sides.Add(forceSide, new List<string>());
+                        continue;
                     }
-                    if (!sides[forceSide].Any(x => x == user))
+
+                    //If not, add him.
+                    if (!userExist)
                     {
-                        sides[forceSide].Add(user);
+                        if (!sides.ContainsKey(forceSide) && userExist == false)
+                        {
+                            sides.Add(forceSide, new List<string>());
+                        }
+                        if (!sides[forceSide].Any(x => x == user))
+                        {
+                            sides[forceSide].Add(user);
+                        }
+
                     }
+
                 }
                 else if (input.Contains(" -> "))
                 {
                     string[] args = input.Split(new[] { " -> " }, StringSplitOptions.RemoveEmptyEntries);
                     string forceSide = args[1];
                     string user = args[0];
-                    //Paduan curr = new Paduan();
-                    //curr.Name = user;
-                    // curr.Side = forceSide;
+
 
                     if (!sides.ContainsKey(forceSide))
                     {
                         sides.Add(forceSide, new List<string>());
                     }
-                    else
+
+                    //If current user exist in current side.
+                    if (sides.ContainsKey(forceSide) && sides[forceSide].Any(x => x == user))
                     {
-                        if (sides.Values.Any(s=>s.Contains(user)))
-                        {
-                            var sa = sides.Values.First(x => x.Contains(user));
-                            sa.Remove(user);
-                        }
-                        //   Paduan curr = new Paduan();
-                        //curr.Name = user;
-                        // curr.Side = forceSide;
-                        sides[forceSide].Add(user);
-                        Console.WriteLine($"{user} joins the {forceSide} side!");
+                        continue;
                     }
+                    //Find and remove current user from the list.
+                    if (sides.Values.Any(s => s.Contains(user)))
+                    {
+                        var findAndRemoveTheUser = sides.Values.First(x => x.Contains(user));
+                        findAndRemoveTheUser.Remove(user);
+                    }
+
+                    sides[forceSide].Add(user);
+                    Console.WriteLine($"{user} joins the {forceSide} side!");
                 }
             }
 
-            var dist = sides.OrderBy(x => x.Value.Count)
-                .ThenBy(x => x.Key);
 
-            foreach (var item in dist.Where(x=>x.Value.Count!=0))
+            var sortedStructure = sides
+                .OrderByDescending(x => x.Value.Count)
+                 .ThenBy(x => x.Key);
+
+            foreach (var side in sortedStructure.Where(x => x.Value.Count != 0))
             {
-                Console.WriteLine($"Side: {item.Key}, Members: {item.Value.Count}");
+                Console.WriteLine($"Side: {side.Key}, Members: {side.Value.Count}");
 
-                foreach (var pad in item.Value.OrderBy(x => x))
+                foreach (var user in side.Value.OrderBy(x => x))
                 {
-                    Console.WriteLine($"! {pad}");
+                    Console.WriteLine($"! {user}");
                 }
             }
 
         }
     }
 }
+
+
+
+
