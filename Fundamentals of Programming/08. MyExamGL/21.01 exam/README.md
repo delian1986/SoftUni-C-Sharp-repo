@@ -1,4 +1,4 @@
-<a href="https://judge.softuni.bg/Contests/919/Practical-Exam-21-January-2018"># 1.Exam &quot;Fundamentals of programming with C#&quot; – 21January 2018</a>
+<a href="https://judge.softuni.bg/Contests/919/Practical-Exam-21-January-2018"> #Exam &quot;Fundamentals of programming with C#&quot; – 21January 2018</a>
 
 # Problem 1. Underground Waters
 
