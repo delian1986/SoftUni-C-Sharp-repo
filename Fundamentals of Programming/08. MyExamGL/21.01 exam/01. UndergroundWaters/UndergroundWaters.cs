@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// 100/100
+/// https://judge.softuni.bg/Contests/Practice/Index/919#0
+/// </summary>
+
 namespace _01.UndergroundWaters
 {
     class UndergroundWaters
