@@ -1,6 +1,6 @@
 # Programming Fundamenals January 2018 Final Exam 04 March 2018
-#<a href="https://judge.softuni.bg/Contests/960/Programming-Fundamentals-Exam-04-March-2018-Part-I">Part I</a>
-#<a href="https://judge.softuni.bg/Contests/962/Programming-Fundamentals-Exam-04-March-2018-Part-II">Part II</a>
+<a href="https://judge.softuni.bg/Contests/960/Programming-Fundamentals-Exam-04-March-2018-Part-I"># Part I</a>
+<a href="https://judge.softuni.bg/Contests/962/Programming-Fundamentals-Exam-04-March-2018-Part-II"># Part II</a>
 
 # Problem 1. Padawan Equipment
 
