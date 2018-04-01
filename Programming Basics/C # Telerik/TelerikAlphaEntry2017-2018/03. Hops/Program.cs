@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 
+/// <summary>
+/// 45/100
+/// </summary>
 namespace _03._Hops
 {
     class Program
@@ -11,7 +15,7 @@ namespace _03._Hops
             int[] sequence = Console.ReadLine().Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 
             int numOfCommands = int.Parse(Console.ReadLine());
-            int maxSum = 0;
+            BigInteger maxSum = int.MinValue;
             List<int> visitedPositons = new List<int>();
             visitedPositons.Add(0);
 
@@ -19,7 +23,7 @@ namespace _03._Hops
             {
                 int[]moves=Console.ReadLine().Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 
-                int sum = sequence[0];
+                BigInteger sum = sequence[0];
                 int bunnyPos = 0;
                 for (int pos = 0; pos < moves.Length; pos++)
                 {
