@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Recursive Array Sum", "01. Recursive Array Sum\01. Recursive Array Sum.csproj", "{BB1EEBCF-04F6-4442-8DEC-6A7C152344A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Recursive Factorial", "02. Recursive Factorial\02. Recursive Factorial.csproj", "{50390DC9-4515-45FF-95A7-32EB3DD8D0BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Recursive Drawing", "03. Recursive Drawing\03. Recursive Drawing.csproj", "{AFA8E3D4-8727-4D1A-B2DA-47EFE6148472}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB1EEBCF-04F6-4442-8DEC-6A7C152344A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1EEBCF-04F6-4442-8DEC-6A7C152344A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1EEBCF-04F6-4442-8DEC-6A7C152344A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1EEBCF-04F6-4442-8DEC-6A7C152344A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50390DC9-4515-45FF-95A7-32EB3DD8D0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50390DC9-4515-45FF-95A7-32EB3DD8D0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50390DC9-4515-45FF-95A7-32EB3DD8D0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50390DC9-4515-45FF-95A7-32EB3DD8D0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA8E3D4-8727-4D1A-B2DA-47EFE6148472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA8E3D4-8727-4D1A-B2DA-47EFE6148472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA8E3D4-8727-4D1A-B2DA-47EFE6148472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA8E3D4-8727-4D1A-B2DA-47EFE6148472}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76080813-29DD-49D2-8782-6E2C5E58380B}
+	EndGlobalSection
+EndGlobal
