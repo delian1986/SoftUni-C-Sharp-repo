@@ -57,11 +57,11 @@ namespace _08.Anonymous_Threat
                         {
                             divided.Add(word.Substring(i * parts, parts));
                         }
-                   
+
                     }
                     input.InsertRange(startIndex, divided);
                 }
-                
+
             }
 
             Console.WriteLine(string.Join(" ", input));
