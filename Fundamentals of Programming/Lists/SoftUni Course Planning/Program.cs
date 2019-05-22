@@ -45,6 +45,7 @@ namespace SoftUni_Course_Planning
                         if (plan.Contains(course))
                         {
                             plan.Remove(course);
+                            plan.Remove($"{course}-Exercise");
                         }
                         break;
                     case "Swap":
@@ -53,6 +54,9 @@ namespace SoftUni_Course_Planning
 
                         if (plan.Contains(lessonTitle1) && plan.Contains(lessonTitle2))
                         {
+                            int lesson1Index = plan.IndexOf(lessonTitle1);
+                            int lesson2Index = plan.IndexOf(lessonTitle2);
+
 
                         }
                         break;
