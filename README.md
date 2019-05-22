@@ -1,8 +1,7 @@
 <!--Making the header in center + pargraf--->
-<h1 align="center">C # -SoftUni-repo</h1>
 <p align = "center"><strong>Keep calm and do your homework</strong></p>
 </br>
-# <p align="center"> Courses from the main program in SoftUni <p>
+<p align="center"> Courses from the main program in SoftUni <p>
 
 <a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] <a/>
 
