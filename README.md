@@ -1,13 +1,12 @@
 <!--Making the header in center + pargraf--->
-# <p align="center"> Courses from the main program in SoftUni <p>
+# <p align="center">Keep calm and do your homework!<p>
 
 <a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] <a/>
 
 [logo]: http://innovationstarterbox.bg/wp-content/uploads/2016/05/Softuni_logo_trasparent.png "Logo Title Text 2"
 
 <!--Adding Content-->
-<h1 align="center"> My journey through SoftUni and C#</h1>
-</br>
+
 
 
 |    Course    |    Certificate                                    | 
